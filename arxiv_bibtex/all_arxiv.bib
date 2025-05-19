@@ -1,0 +1,1114 @@
+@article{2312.10997v5,
+  title={ Retrieval-Augmented Generation for Large Language Models: A Survey },
+  author={ Yunfan Gao and Yun Xiong and Xinyu Gao and Kangxiang Jia and Jinliu Pan and Yuxi Bi and Yi Dai and Jiawei Sun and Meng Wang and Haofen Wang },
+  year={ 2023 },
+  journal={ arXiv preprint arXiv:2312.10997v5 },
+  url={ http://arxiv.org/abs/2312.10997v5 },
+  eprint={ 2312.10997v5 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2312.10997v5 },
+  abstract={ Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development. }
+}
+
+
+@article{2402.16893v1,
+  title={ The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG) },
+  author={ Shenglai Zeng and Jiankun Zhang and Pengfei He and Yue Xing and Yiding Liu and Han Xu and Jie Ren and Shuaiqiang Wang and Dawei Yin and Yi Chang and Jiliang Tang },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2402.16893v1 },
+  url={ http://arxiv.org/abs/2402.16893v1 },
+  eprint={ 2402.16893v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2402.16893v1 },
+  abstract={ Retrieval-augmented generation (RAG) is a powerful technique to facilitate language model with proprietary and private data, where data privacy is a pivotal concern. Whereas extensive research has demonstrated the privacy risks of large language models (LLMs), the RAG technique could potentially reshape the inherent behaviors of LLM generation, posing new privacy issues that are currently under-explored. In this work, we conduct extensive empirical studies with novel attack methods, which demonstrate the vulnerability of RAG systems on leaking the private retrieval database. Despite the new risk brought by RAG on the retrieval data, we further reveal that RAG can mitigate the leakage of the LLMs' training data. Overall, we provide new insights in this paper for privacy protection of retrieval-augmented LLMs, which benefit both LLMs and RAG systems builders. Our code is available at https://github.com/phycholosogy/RAG-privacy. }
+}
+
+
+@article{2404.04044v2,
+  title={ A Comparison of Methods for Evaluating Generative IR },
+  author={ Negar Arabzadeh and Charles L. A. Clarke },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2404.04044v2 },
+  url={ http://arxiv.org/abs/2404.04044v2 },
+  eprint={ 2404.04044v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2404.04044v2 },
+  abstract={ Information retrieval systems increasingly incorporate generative components. For example, in a retrieval augmented generation (RAG) system, a retrieval component might provide a source of ground truth, while a generative component summarizes and augments its responses. In other systems, a large language model (LLM) might directly generate responses without consulting a retrieval component. While there are multiple definitions of generative information retrieval (Gen-IR) systems, in this paper we focus on those systems where the system's response is not drawn from a fixed collection of documents or passages. The response to a query may be entirely new text. Since traditional IR evaluation methods break down under this model, we explore various methods that extend traditional offline evaluation approaches to the Gen-IR context. Offline IR evaluation traditionally employs paid human assessors, but increasingly LLMs are replacing human assessment, demonstrating capabilities similar or superior to crowdsourced labels. Given that Gen-IR systems do not generate responses from a fixed set, we assume that methods for Gen-IR evaluation must largely depend on LLM-generated labels. Along with methods based on binary and graded relevance, we explore methods based on explicit subtopics, pairwise preferences, and embeddings. We first validate these methods against human assessments on several TREC Deep Learning Track tasks; we then apply these methods to evaluate the output of several purely generative systems. For each method we consider both its ability to act autonomously, without the need for human labels or other input, and its ability to support human auditing. To trust these methods, we must be assured that their results align with human assessments. In order to do so, evaluation criteria must be transparent, so that outcomes can be audited by human assessors. }
+}
+
+
+@article{2405.20446v3,
+  title={ Is My Data in Your Retrieval Database? Membership Inference Attacks Against Retrieval Augmented Generation },
+  author={ Maya Anderson and Guy Amit and Abigail Goldsteen },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2405.20446v3 },
+  url={ http://arxiv.org/abs/2405.20446v3 },
+  eprint={ 2405.20446v3 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2405.20446v3 },
+  doi={ 10.5220/0013108300003899 },
+  abstract={ Retrieval Augmented Generation (RAG) systems have shown great promise in natural language processing. However, their reliance on data stored in a retrieval database, which may contain proprietary or sensitive information, introduces new privacy concerns. Specifically, an attacker may be able to infer whether a certain text passage appears in the retrieval database by observing the outputs of the RAG system, an attack known as a Membership Inference Attack (MIA). Despite the significance of this threat, MIAs against RAG systems have yet remained under-explored. This study addresses this gap by introducing an efficient and easy-to-use method for conducting MIA against RAG systems. We demonstrate the effectiveness of our attack using two benchmark datasets and multiple generative models, showing that the membership of a document in the retrieval database can be efficiently determined through the creation of an appropriate prompt in both black-box and gray-box settings. Moreover, we introduce an initial defense strategy based on adding instructions to the RAG template, which shows high effectiveness for some datasets and models. Our findings highlight the importance of implementing security countermeasures in deployed RAG systems and developing more advanced defenses to protect the privacy and security of retrieval databases. }
+}
+
+
+@article{2405.20485v2,
+  title={ Phantom: General Trigger Attacks on Retrieval Augmented Language Generation },
+  author={ Harsh Chaudhari and Giorgio Severi and John Abascal and Matthew Jagielski and Christopher A. Choquette-Choo and Milad Nasr and Cristina Nita-Rotaru and Alina Oprea },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2405.20485v2 },
+  url={ http://arxiv.org/abs/2405.20485v2 },
+  eprint={ 2405.20485v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2405.20485v2 },
+  abstract={ Retrieval Augmented Generation (RAG) expands the capabilities of modern large language models (LLMs), by anchoring, adapting, and personalizing their responses to the most relevant knowledge sources. It is particularly useful in chatbot applications, allowing developers to customize LLM output without expensive retraining. Despite their significant utility in various applications, RAG systems present new security risks. In this work, we propose new attack vectors that allow an adversary to inject a single malicious document into a RAG system's knowledge base, and mount a backdoor poisoning attack. We design Phantom, a general two-stage optimization framework against RAG systems, that crafts a malicious poisoned document leading to an integrity violation in the model's output. First, the document is constructed to be retrieved only when a specific trigger sequence of tokens appears in the victim's queries. Second, the document is further optimized with crafted adversarial text that induces various adversarial objectives on the LLM output, including refusal to answer, reputation damage, privacy violations, and harmful behaviors. We demonstrate our attacks on multiple LLM architectures, including Gemma, Vicuna, and Llama, and show that they transfer to GPT-3.5 Turbo and GPT-4. Finally, we successfully conducted a Phantom attack on NVIDIA's black-box production RAG system, "Chat with RTX". }
+}
+
+
+@article{2406.14773v2,
+  title={ Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data },
+  author={ Shenglai Zeng and Jiankun Zhang and Pengfei He and Jie Ren and Tianqi Zheng and Hanqing Lu and Han Xu and Hui Liu and Yue Xing and Jiliang Tang },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2406.14773v2 },
+  url={ http://arxiv.org/abs/2406.14773v2 },
+  eprint={ 2406.14773v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2406.14773v2 },
+  abstract={ Retrieval-augmented generation (RAG) enhances the outputs of language models by integrating relevant information retrieved from external knowledge sources. However, when the retrieval process involves private data, RAG systems may face severe privacy risks, potentially leading to the leakage of sensitive information. To address this issue, we propose using synthetic data as a privacy-preserving alternative for the retrieval data. We propose SAGE, a novel two-stage synthetic data generation paradigm. In the stage-1, we employ an attribute-based extraction and generation approach to preserve key contextual information from the original data. In the stage-2, we further enhance the privacy properties of the synthetic data through an agent-based iterative refinement process. Extensive experiments demonstrate that using our synthetic data as the retrieval context achieves comparable performance to using the original data while substantially reducing privacy risks. Our work takes the first step towards investigating the possibility of generating high-utility and privacy-preserving synthetic data for RAG, opening up new opportunities for the safe application of RAG systems in various domains. }
+}
+
+
+@article{2406.19234v2,
+  title={ Generating Is Believing: Membership Inference Attacks against Retrieval-Augmented Generation },
+  author={ Yuying Li and Gaoyang Liu and Chen Wang and Yang Yang },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2406.19234v2 },
+  url={ http://arxiv.org/abs/2406.19234v2 },
+  eprint={ 2406.19234v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2406.19234v2 },
+  abstract={ Retrieval-Augmented Generation (RAG) is a state-of-the-art technique that mitigates issues such as hallucinations and knowledge staleness in Large Language Models (LLMs) by retrieving relevant knowledge from an external database to assist in content generation. Existing research has demonstrated potential privacy risks associated with the LLMs of RAG. However, the privacy risks posed by the integration of an external database, which often contains sensitive data such as medical records or personal identities, have remained largely unexplored. In this paper, we aim to bridge this gap by focusing on membership privacy of RAG's external database, with the aim of determining whether a given sample is part of the RAG's database. Our basic idea is that if a sample is in the external database, it will exhibit a high degree of semantic similarity to the text generated by the RAG system. We present S$^2$MIA, a \underlineMembership \underlineInference \underlineAttack that utilizes the \underlineSemantic \underlineSimilarity between a given sample and the content generated by the RAG system. With our proposed S$^2$MIA, we demonstrate the potential to breach the membership privacy of the RAG database. Extensive experiment results demonstrate that S$^2$MIA can achieve a strong inference performance compared with five existing MIAs, and is able to escape from the protection of three representative defenses. }
+}
+
+
+@article{2407.01110v1,
+  title={ SecGenAI: Enhancing Security of Cloud-based Generative AI Applications within Australian Critical Technologies of National Interest },
+  author={ Christoforus Yoga Haryanto and Minh Hieu Vu and Trung Duc Nguyen and Emily Lomempow and Yulia Nurliana and Sona Taheri },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2407.01110v1 },
+  url={ http://arxiv.org/abs/2407.01110v1 },
+  eprint={ 2407.01110v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2407.01110v1 },
+  abstract={ The rapid advancement of Generative AI (GenAI) technologies offers transformative opportunities within Australia's critical technologies of national interest while introducing unique security challenges. This paper presents SecGenAI, a comprehensive security framework for cloud-based GenAI applications, with a focus on Retrieval-Augmented Generation (RAG) systems. SecGenAI addresses functional, infrastructure, and governance requirements, integrating end-to-end security analysis to generate specifications emphasizing data privacy, secure deployment, and shared responsibility models. Aligned with Australian Privacy Principles, AI Ethics Principles, and guidelines from the Australian Cyber Security Centre and Digital Transformation Agency, SecGenAI mitigates threats such as data leakage, adversarial attacks, and model inversion. The framework's novel approach combines advanced machine learning techniques with robust security measures, ensuring compliance with Australian regulations while enhancing the reliability and trustworthiness of GenAI systems. This research contributes to the field of intelligent systems by providing actionable strategies for secure GenAI implementation in industry, fostering innovation in AI applications, and safeguarding national interests. }
+}
+
+
+@article{2407.14717v2,
+  title={ Differential Privacy of Cross-Attention with Provable Guarantee },
+  author={ Yingyu Liang and Zhenmei Shi and Zhao Song and Yufa Zhou },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2407.14717v2 },
+  url={ http://arxiv.org/abs/2407.14717v2 },
+  eprint={ 2407.14717v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.LG },
+  pdf={ http://arxiv.org/pdf/2407.14717v2 },
+  abstract={ Cross-attention has become a fundamental module nowadays in many important artificial intelligence applications, e.g., retrieval-augmented generation (RAG), system prompt, guided stable diffusion, and many more. Ensuring cross-attention privacy is crucial and urgently needed because its key and value matrices may contain sensitive information about model providers and their users. In this work, we design a novel differential privacy (DP) data structure to address the privacy security of cross-attention with a theoretical guarantee. In detail, let $n$ be the input token length of system prompt/RAG data, $d$ be the feature dimension, $0 < \alpha \le 1$ be the relative error parameter, $R$ be the maximum value of the query and key matrices, $R_w$ be the maximum value of the value matrix, and $r,s,\epsilon_s$ be parameters of polynomial kernel methods. Then, our data structure requires $\widetildeO(ndr^2)$ memory consumption with $\widetildeO(nr^2)$ initialization time complexity and $\widetildeO(\alpha^-1 r^2)$ query time complexity for a single token query. In addition, our data structure can guarantee that the process of answering user query satisfies $(\epsilon, \delta)$-DP with $\widetildeO(n^-1 \epsilon^-1 \alpha^-1/2 R^2s R_w r^2)$ additive error and $n^-1 (\alpha + \epsilon_s)$ relative error between our output and the true answer. Furthermore, our result is robust to adaptive queries in which users can intentionally attack the cross-attention system. To our knowledge, this is the first work to provide DP for cross-attention and is promising to inspire more privacy algorithm design in large generative models (LGMs). }
+}
+
+
+@article{2409.03759v1,
+  title={ VERA: Validation and Evaluation of Retrieval-Augmented Systems },
+  author={ Tianyu Ding and Adi Banerjee and Laurent Mombaerts and Yunhong Li and Tarik Borogovac and Juan Pablo De la Cruz Weinstein },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2409.03759v1 },
+  url={ http://arxiv.org/abs/2409.03759v1 },
+  eprint={ 2409.03759v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2409.03759v1 },
+  abstract={ The increasing use of Retrieval-Augmented Generation (RAG) systems in various applications necessitates stringent protocols to ensure RAG systems accuracy, safety, and alignment with user intentions. In this paper, we introduce VERA (Validation and Evaluation of Retrieval-Augmented Systems), a framework designed to enhance the transparency and reliability of outputs from large language models (LLMs) that utilize retrieved information. VERA improves the way we evaluate RAG systems in two important ways: (1) it introduces a cross-encoder based mechanism that encompasses a set of multidimensional metrics into a single comprehensive ranking score, addressing the challenge of prioritizing individual metrics, and (2) it employs Bootstrap statistics on LLM-based metrics across the document repository to establish confidence bounds, ensuring the repositorys topical coverage and improving the overall reliability of retrieval systems. Through several use cases, we demonstrate how VERA can strengthen decision-making processes and trust in AI applications. Our findings not only contribute to the theoretical understanding of LLM-based RAG evaluation metric but also promote the practical implementation of responsible AI systems, marking a significant advancement in the development of reliable and transparent generative AI technologies. }
+}
+
+
+@article{2409.10102v1,
+  title={ Trustworthiness in Retrieval-Augmented Generation Systems: A Survey },
+  author={ Yujia Zhou and Yan Liu and Xiaoxi Li and Jiajie Jin and Hongjin Qian and Zheng Liu and Chaozhuo Li and Zhicheng Dou and Tsung-Yi Ho and Philip S. Yu },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2409.10102v1 },
+  url={ http://arxiv.org/abs/2409.10102v1 },
+  eprint={ 2409.10102v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2409.10102v1 },
+  abstract={ Retrieval-Augmented Generation (RAG) has quickly grown into a pivotal paradigm in the development of Large Language Models (LLMs). While much of the current research in this field focuses on performance optimization, particularly in terms of accuracy and efficiency, the trustworthiness of RAG systems remains an area still under exploration. From a positive perspective, RAG systems are promising to enhance LLMs by providing them with useful and up-to-date knowledge from vast external databases, thereby mitigating the long-standing problem of hallucination. While from a negative perspective, RAG systems are at the risk of generating undesirable contents if the retrieved information is either inappropriate or poorly utilized. To address these concerns, we propose a unified framework that assesses the trustworthiness of RAG systems across six key dimensions: factuality, robustness, fairness, transparency, accountability, and privacy. Within this framework, we thoroughly review the existing literature on each dimension. Additionally, we create the evaluation benchmark regarding the six dimensions and conduct comprehensive evaluations for a variety of proprietary and open-source models. Finally, we identify the potential challenges for future research based on our investigation results. Through this work, we aim to lay a structured foundation for future investigations and provide practical insights for enhancing the trustworthiness of RAG systems in real-world applications. }
+}
+
+
+@article{2409.11598v3,
+  title={ Towards Fair RAG: On the Impact of Fair Ranking in Retrieval-Augmented Generation },
+  author={ To Eun Kim and Fernando Diaz },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2409.11598v3 },
+  url={ http://arxiv.org/abs/2409.11598v3 },
+  eprint={ 2409.11598v3 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2409.11598v3 },
+  abstract={ Modern language models frequently include retrieval components to improve their outputs, giving rise to a growing number of retrieval-augmented generation (RAG) systems. Yet, most existing work in RAG has underemphasized fair ranking techniques and neglected the diverse interests of all stakeholders. In this paper, we present the first comprehensive study of RAG systems that incorporate fairness-aware rankings, focusing on both ranking fairness and attribution fairness - ensuring equitable exposure of sources cited in the final text. We specifically examine item-side fairness, i.e., whether retrieved documents receive balanced exposure, and assess how this affects both the system's overall performance and the eventual distribution of cited sources. Across twelve RAG models and seven tasks, we find that fairness-aware retrieval frequently retains or even improves ranking effectiveness and generation quality, countering the widespread belief that fairness compromises system performance. Moreover, we show that fair retrieval leads to more balanced attribution in the final responses, ensuring that the cited sources are credited more equitably. Our results underscore the importance of item-side fairness throughout both retrieval and generation phases, offering key insights for building more responsible and equitable RAG systems and illustrating promising avenues for future exploration in fair ranking and source attribution. }
+}
+
+
+@article{2410.01066v2,
+  title={ From Natural Language to SQL: Review of LLM-based Text-to-SQL Systems },
+  author={ Ali Mohammadjafari and Anthony S. Maida and Raju Gottumukkala },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2410.01066v2 },
+  url={ http://arxiv.org/abs/2410.01066v2 },
+  eprint={ 2410.01066v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2410.01066v2 },
+  abstract={ LLMs when used with Retrieval Augmented Generation (RAG), are greatly improving the SOTA of translating natural language queries to structured and correct SQL. Unlike previous reviews, this survey provides a comprehensive study of the evolution of LLM-based text-to-SQL systems, from early rule-based models to advanced LLM approaches that use (RAG) systems. We discuss benchmarks, evaluation methods, and evaluation metrics. Also, we uniquely study the use of Graph RAGs for better contextual accuracy and schema linking in these systems. Finally, we highlight key challenges such as computational efficiency, model robustness, and data privacy toward improvements of LLM-based text-to-SQL systems. }
+}
+
+
+@article{2410.05930v1,
+  title={ Fortify Your Foundations: Practical Privacy and Security for Foundation Model Deployments In The Cloud },
+  author={ Marcin Chrapek and Anjo Vahldiek-Oberwagner and Marcin Spoczynski and Scott Constable and Mona Vij and Torsten Hoefler },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2410.05930v1 },
+  url={ http://arxiv.org/abs/2410.05930v1 },
+  eprint={ 2410.05930v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2410.05930v1 },
+  abstract={ Foundation Models (FMs) display exceptional performance in tasks such as natural language processing and are being applied across a growing range of disciplines. Although typically trained on large public datasets, FMs are often fine-tuned or integrated into Retrieval-Augmented Generation (RAG) systems, which rely on private data. This access, along with their size and costly training, heightens the risk of intellectual property theft. Moreover, multimodal FMs may expose sensitive information. In this work, we examine the FM threat model and discuss the practicality and comprehensiveness of various approaches for securing against them, such as ML-based methods and trusted execution environments (TEEs). We demonstrate that TEEs offer an effective balance between strong security properties, usability, and performance. Specifically, we present a solution achieving less than 10\% overhead versus bare metal for the full Llama2 7B and 13B inference pipelines running inside \intel\ SGX and \intel\ TDX. We also share our configuration files and insights from our implementation. To our knowledge, our work is the first to show the practicality of TEEs for securing FMs. }
+}
+
+
+@article{2410.15944v1,
+  title={ Developing Retrieval Augmented Generation (RAG) based LLM Systems from PDFs: An Experience Report },
+  author={ Ayman Asad Khan and Md Toufique Hasan and Kai Kristian Kemell and Jussi Rasku and Pekka Abrahamsson },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2410.15944v1 },
+  url={ http://arxiv.org/abs/2410.15944v1 },
+  eprint={ 2410.15944v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.SE },
+  pdf={ http://arxiv.org/pdf/2410.15944v1 },
+  abstract={ This paper presents an experience report on the development of Retrieval Augmented Generation (RAG) systems using PDF documents as the primary data source. The RAG architecture combines generative capabilities of Large Language Models (LLMs) with the precision of information retrieval. This approach has the potential to redefine how we interact with and augment both structured and unstructured knowledge in generative models to enhance transparency, accuracy, and contextuality of responses. The paper details the end-to-end pipeline, from data collection, preprocessing, to retrieval indexing and response generation, highlighting technical challenges and practical solutions. We aim to offer insights to researchers and practitioners developing similar systems using two distinct approaches: OpenAI's Assistant API with GPT Series and Llama's open-source models. The practical implications of this research lie in enhancing the reliability of generative AI systems in various sectors where domain-specific knowledge and real-time information retrieval is important. The Python code used in this work is also available at: https://github.com/GPT-Laboratory/RAG-LLM-Development-Guidebook-from-PDFs. }
+}
+
+
+@article{2411.01705v2,
+  title={ Data Extraction Attacks in Retrieval-Augmented Generation via Backdoors },
+  author={ Yuefeng Peng and Junda Wang and Hong Yu and Amir Houmansadr },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2411.01705v2 },
+  url={ http://arxiv.org/abs/2411.01705v2 },
+  eprint={ 2411.01705v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2411.01705v2 },
+  abstract={ Despite significant advancements, large language models (LLMs) still struggle with providing accurate answers when lacking domain-specific or up-to-date knowledge. Retrieval-Augmented Generation (RAG) addresses this limitation by incorporating external knowledge bases, but it also introduces new attack surfaces. In this paper, we investigate data extraction attacks targeting RAG's knowledge databases. We show that previous prompt injection-based extraction attacks largely rely on the instruction-following capabilities of LLMs. As a result, they fail on models that are less responsive to such malicious prompts -- for example, our experiments show that state-of-the-art attacks achieve near-zero success on Gemma-2B-IT. Moreover, even for models that can follow these instructions, we found fine-tuning may significantly reduce attack performance. To further reveal the vulnerability, we propose to backdoor RAG, where a small portion of poisoned data is injected during the fine-tuning phase to create a backdoor within the LLM. When this compromised LLM is integrated into a RAG system, attackers can exploit specific triggers in prompts to manipulate the LLM to leak documents from the retrieval database. By carefully designing the poisoned data, we achieve both verbatim and paraphrased document extraction. For example, on Gemma-2B-IT, we show that with only 5\% poisoned data, our method achieves an average success rate of 94.1\% for verbatim extraction (ROUGE-L score: 82.1) and 63.6\% for paraphrased extraction (average ROUGE score: 66.4) across four datasets. These results underscore the privacy risks associated with the supply chain when deploying RAG systems. }
+}
+
+
+@article{2411.13173v2,
+  title={ Writing Style Matters: An Examination of Bias and Fairness in Information Retrieval Systems },
+  author={ Hongliu Cao },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2411.13173v2 },
+  url={ http://arxiv.org/abs/2411.13173v2 },
+  eprint={ 2411.13173v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2411.13173v2 },
+  doi={ 10.1145/3701551.3703514 },
+  abstract={ The rapid advancement of Language Model technologies has opened new opportunities, but also introduced new challenges related to bias and fairness. This paper explores the uncharted territory of potential biases in state-of-the-art universal text embedding models towards specific document and query writing styles within Information Retrieval (IR) systems. Our investigation reveals that different embedding models exhibit different preferences of document writing style, while more informal and emotive styles are less favored by most embedding models. In terms of query writing styles, many embedding models tend to match the style of the query with the style of the retrieved documents, but some show a consistent preference for specific styles. Text embedding models fine-tuned on synthetic data generated by LLMs display a consistent preference for certain style of generated data. These biases in text embedding based IR systems can inadvertently silence or marginalize certain communication styles, thereby posing a significant threat to fairness in information retrieval. Finally, we also compare the answer styles of Retrieval Augmented Generation (RAG) systems based on different LLMs and find out that most text embedding models are biased towards LLM's answer styles when used as evaluation metrics for answer correctness. This study sheds light on the critical issue of writing style based bias in IR systems, offering valuable insights for the development of more fair and robust models. }
+}
+
+
+@article{2411.16391v2,
+  title={ Human-Calibrated Automated Testing and Validation of Generative Language Models },
+  author={ Agus Sudjianto and Aijun Zhang and Srinivas Neppalli and Tarun Joshi and Michal Malohlava },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2411.16391v2 },
+  url={ http://arxiv.org/abs/2411.16391v2 },
+  eprint={ 2411.16391v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2411.16391v2 },
+  abstract={ This paper introduces a comprehensive framework for the evaluation and validation of generative language models (GLMs), with a focus on Retrieval-Augmented Generation (RAG) systems deployed in high-stakes domains such as banking. GLM evaluation is challenging due to open-ended outputs and subjective quality assessments. Leveraging the structured nature of RAG systems, where generated responses are grounded in a predefined document collection, we propose the Human-Calibrated Automated Testing (HCAT) framework. HCAT integrates a) automated test generation using stratified sampling, b) embedding-based metrics for explainable assessment of functionality, risk and safety attributes, and c) a two-stage calibration approach that aligns machine-generated evaluations with human judgments through probability calibration and conformal prediction.   In addition, the framework includes robustness testing to evaluate model performance against adversarial, out-of-distribution, and varied input conditions, as well as targeted weakness identification using marginal and bivariate analysis to pinpoint specific areas for improvement. This human-calibrated, multi-layered evaluation framework offers a scalable, transparent, and interpretable approach to GLM assessment, providing a practical and reliable solution for deploying GLMs in applications where accuracy, transparency, and regulatory compliance are paramount. }
+}
+
+
+@article{2412.07626v2,
+  title={ OmniDocBench: Benchmarking Diverse PDF Document Parsing with Comprehensive Annotations },
+  author={ Linke Ouyang and Yuan Qu and Hongbin Zhou and Jiawei Zhu and Rui Zhang and Qunshu Lin and Bin Wang and Zhiyuan Zhao and Man Jiang and Xiaomeng Zhao and Jin Shi and Fan Wu and Pei Chu and Minghao Liu and Zhenxiang Li and Chao Xu and Bo Zhang and Botian Shi and Zhongying Tu and Conghui He },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.07626v2 },
+  url={ http://arxiv.org/abs/2412.07626v2 },
+  eprint={ 2412.07626v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CV },
+  pdf={ http://arxiv.org/pdf/2412.07626v2 },
+  abstract={ Document content extraction is a critical task in computer vision, underpinning the data needs of large language models (LLMs) and retrieval-augmented generation (RAG) systems. Despite recent progress, current document parsing methods have not been fairly and comprehensively evaluated due to the narrow coverage of document types and the simplified, unrealistic evaluation procedures in existing benchmarks. To address these gaps, we introduce OmniDocBench, a novel benchmark featuring high-quality annotations across nine document sources, including academic papers, textbooks, and more challenging cases such as handwritten notes and densely typeset newspapers. OmniDocBench supports flexible, multi-level evaluations--ranging from an end-to-end assessment to the task-specific and attribute--based analysis using 19 layout categories and 15 attribute labels. We conduct a thorough evaluation of both pipeline-based methods and end-to-end vision-language models, revealing their strengths and weaknesses across different document types. OmniDocBench sets a new standard for the fair, diverse, and fine-grained evaluation in document parsing. Dataset and code are available at https://github.com/opendatalab/OmniDocBench. }
+}
+
+
+@article{2412.12358v1,
+  title={ BioRAGent: A Retrieval-Augmented Generation System for Showcasing Generative Query Expansion and Domain-Specific Search for Scientific Q&A },
+  author={ Samy Ateia and Udo Kruschwitz },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.12358v1 },
+  url={ http://arxiv.org/abs/2412.12358v1 },
+  eprint={ 2412.12358v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2412.12358v1 },
+  abstract={ We present BioRAGent, an interactive web-based retrieval-augmented generation (RAG) system for biomedical question answering. The system uses large language models (LLMs) for query expansion, snippet extraction, and answer generation while maintaining transparency through citation links to the source documents and displaying generated queries for further editing. Building on our successful participation in the BioASQ 2024 challenge, we demonstrate how few-shot learning with LLMs can be effectively applied for a professional search setting. The system supports both direct short paragraph style responses and responses with inline citations. Our demo is available online, and the source code is publicly accessible through GitHub. }
+}
+
+
+@article{2412.13720v2,
+  title={ Federated Learning and RAG Integration: A Scalable Approach for Medical Large Language Models },
+  author={ Jincheol Jung and Hongju Jeong and Eui-Nam Huh },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.13720v2 },
+  url={ http://arxiv.org/abs/2412.13720v2 },
+  eprint={ 2412.13720v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2412.13720v2 },
+  abstract={ This study analyzes the performance of domain-specific Large Language Models (LLMs) for the medical field by integrating Retrieval-Augmented Generation (RAG) systems within a federated learning framework. Leveraging the inherent advantages of federated learning, such as preserving data privacy and enabling distributed computation, this research explores the integration of RAG systems with models trained under varying client configurations to optimize performance. Experimental results demonstrate that the federated learning-based models integrated with RAG systems consistently outperform their non-integrated counterparts across all evaluation metrics. This study highlights the potential of combining federated learning and RAG systems for developing domain-specific LLMs in the medical field, providing a scalable and privacy-preserving solution for enhancing text generation capabilities. }
+}
+
+
+@article{2412.14457v1,
+  title={ VISA: Retrieval Augmented Generation with Visual Source Attribution },
+  author={ Xueguang Ma and Shengyao Zhuang and Bevan Koopman and Guido Zuccon and Wenhu Chen and Jimmy Lin },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.14457v1 },
+  url={ http://arxiv.org/abs/2412.14457v1 },
+  eprint={ 2412.14457v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2412.14457v1 },
+  abstract={ Generation with source attribution is important for enhancing the verifiability of retrieval-augmented generation (RAG) systems. However, existing approaches in RAG primarily link generated content to document-level references, making it challenging for users to locate evidence among multiple content-rich retrieved documents. To address this challenge, we propose Retrieval-Augmented Generation with Visual Source Attribution (VISA), a novel approach that combines answer generation with visual source attribution. Leveraging large vision-language models (VLMs), VISA identifies the evidence and highlights the exact regions that support the generated answers with bounding boxes in the retrieved document screenshots. To evaluate its effectiveness, we curated two datasets: Wiki-VISA, based on crawled Wikipedia webpage screenshots, and Paper-VISA, derived from PubLayNet and tailored to the medical domain. Experimental results demonstrate the effectiveness of VISA for visual source attribution on documents' original look, as well as highlighting the challenges for improvement. Code, data, and model checkpoints will be released. }
+}
+
+
+@article{2412.16086v2,
+  title={ Towards Interpretable Radiology Report Generation via Concept Bottlenecks using a Multi-Agentic RAG },
+  author={ Hasan Md Tusfiqur Alam and Devansh Srivastav and Md Abdul Kadir and Daniel Sonntag },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.16086v2 },
+  url={ http://arxiv.org/abs/2412.16086v2 },
+  eprint={ 2412.16086v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2412.16086v2 },
+  doi={ 10.1007/978-3-031-88714-7_18 },
+  abstract={ Deep learning has advanced medical image classification, but interpretability challenges hinder its clinical adoption. This study enhances interpretability in Chest X-ray (CXR) classification by using concept bottleneck models (CBMs) and a multi-agent Retrieval-Augmented Generation (RAG) system for report generation. By modeling relationships between visual features and clinical concepts, we create interpretable concept vectors that guide a multi-agent RAG system to generate radiology reports, enhancing clinical relevance, explainability, and transparency. Evaluation of the generated reports using an LLM-as-a-judge confirmed the interpretability and clinical utility of our model's outputs. On the COVID-QU dataset, our model achieved 81% classification accuracy and demonstrated robust report generation performance, with five key metrics ranging between 84% and 90%. This interpretable multi-agent framework bridges the gap between high-performance AI and the explainability required for reliable AI-driven CXR analysis in clinical settings. Our code is available at https://github.com/tifat58/IRR-with-CBM-RAG.git. }
+}
+
+
+@article{2412.18295v2,
+  title={ Pirates of the RAG: Adaptively Attacking LLMs to Leak Knowledge Bases },
+  author={ Christian Di Maio and Cristian Cosci and Marco Maggini and Valentina Poggioni and Stefano Melacci },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.18295v2 },
+  url={ http://arxiv.org/abs/2412.18295v2 },
+  eprint={ 2412.18295v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.AI },
+  pdf={ http://arxiv.org/pdf/2412.18295v2 },
+  abstract={ The growing ubiquity of Retrieval-Augmented Generation (RAG) systems in several real-world services triggers severe concerns about their security. A RAG system improves the generative capabilities of a Large Language Models (LLM) by a retrieval mechanism which operates on a private knowledge base, whose unintended exposure could lead to severe consequences, including breaches of private and sensitive information. This paper presents a black-box attack to force a RAG system to leak its private knowledge base which, differently from existing approaches, is adaptive and automatic. A relevance-based mechanism and an attacker-side open-source LLM favor the generation of effective queries to leak most of the (hidden) knowledge base. Extensive experimentation proves the quality of the proposed algorithm in different RAG pipelines and domains, comparing to very recent related approaches, which turn out to be either not fully black-box, not adaptive, or not based on open-source models. The findings from our study remark the urgent need for more robust privacy safeguards in the design and deployment of RAG systems. }
+}
+
+
+@article{2501.05249v1,
+  title={ RAG-WM: An Efficient Black-Box Watermarking Approach for Retrieval-Augmented Generation of Large Language Models },
+  author={ Peizhuo Lv and Mengjie Sun and Hao Wang and Xiaofeng Wang and Shengzhi Zhang and Yuxuan Chen and Kai Chen and Limin Sun },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2501.05249v1 },
+  url={ http://arxiv.org/abs/2501.05249v1 },
+  eprint={ 2501.05249v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2501.05249v1 },
+  abstract={ In recent years, tremendous success has been witnessed in Retrieval-Augmented Generation (RAG), widely used to enhance Large Language Models (LLMs) in domain-specific, knowledge-intensive, and privacy-sensitive tasks. However, attackers may steal those valuable RAGs and deploy or commercialize them, making it essential to detect Intellectual Property (IP) infringement. Most existing ownership protection solutions, such as watermarks, are designed for relational databases and texts. They cannot be directly applied to RAGs because relational database watermarks require white-box access to detect IP infringement, which is unrealistic for the knowledge base in RAGs. Meanwhile, post-processing by the adversary's deployed LLMs typically destructs text watermark information. To address those problems, we propose a novel black-box "knowledge watermark" approach, named RAG-WM, to detect IP infringement of RAGs. RAG-WM uses a multi-LLM interaction framework, comprising a Watermark Generator, Shadow LLM & RAG, and Watermark Discriminator, to create watermark texts based on watermark entity-relationship tuples and inject them into the target RAG. We evaluate RAG-WM across three domain-specific and two privacy-sensitive tasks on four benchmark LLMs. Experimental results show that RAG-WM effectively detects the stolen RAGs in various deployed LLMs. Furthermore, RAG-WM is robust against paraphrasing, unrelated content removal, knowledge insertion, and knowledge expansion attacks. Lastly, RAG-WM can also evade watermark detection approaches, highlighting its promising application in detecting IP infringement of RAG systems. }
+}
+
+
+@article{2501.13944v1,
+  title={ Fanar: An Arabic-Centric Multimodal Generative AI Platform },
+  author={ Fanar Team and Ummar Abbas and Mohammad Shahmeer Ahmad and Firoj Alam and Enes Altinisik and Ehsannedin Asgari and Yazan Boshmaf and Sabri Boughorbel and Sanjay Chawla and Shammur Chowdhury and Fahim Dalvi and Kareem Darwish and Nadir Durrani and Mohamed Elfeky and Ahmed Elmagarmid and Mohamed Eltabakh and Masoomali Fatehkia and Anastasios Fragkopoulos and Maram Hasanain and Majd Hawasly and Mus'ab Husaini and Soon-Gyo Jung and Ji Kim Lucas and Walid Magdy and Safa Messaoud and Abubakr Mohamed and Tasnim Mohiuddin and Basel Mousi and Hamdy Mubarak and Ahmad Musleh and Zan Naeem and Mourad Ouzzani and Dorde Popovic and Amin Sadeghi and Husrev Taha Sencar and Mohammed Shinoy and Omar Sinan and Yifan Zhang and Ahmed Ali and Yassine El Kheir and Xiaosong Ma and Chaoyi Ruan },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2501.13944v1 },
+  url={ http://arxiv.org/abs/2501.13944v1 },
+  eprint={ 2501.13944v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2501.13944v1 },
+  abstract={ We present Fanar, a platform for Arabic-centric multimodal generative AI systems, that supports language, speech and image generation tasks. At the heart of Fanar are Fanar Star and Fanar Prime, two highly capable Arabic Large Language Models (LLMs) that are best in the class on well established benchmarks for similar sized models. Fanar Star is a 7B (billion) parameter model that was trained from scratch on nearly 1 trillion clean and deduplicated Arabic, English and Code tokens. Fanar Prime is a 9B parameter model continually trained on the Gemma-2 9B base model on the same 1 trillion token set. Both models are concurrently deployed and designed to address different types of prompts transparently routed through a custom-built orchestrator. The Fanar platform provides many other capabilities including a customized Islamic Retrieval Augmented Generation (RAG) system for handling religious prompts, a Recency RAG for summarizing information about current or recent events that have occurred after the pre-training data cut-off date. The platform provides additional cognitive capabilities including in-house bilingual speech recognition that supports multiple Arabic dialects, voice and image generation that is fine-tuned to better reflect regional characteristics. Finally, Fanar provides an attribution service that can be used to verify the authenticity of fact based generated content.   The design, development, and implementation of Fanar was entirely undertaken at Hamad Bin Khalifa University's Qatar Computing Research Institute (QCRI) and was sponsored by Qatar's Ministry of Communications and Information Technology to enable sovereign AI technology development. }
+}
+
+
+@article{2502.03916v1,
+  title={ Experiments with Large Language Models on Retrieval-Augmented Generation for Closed-Source Simulation Software },
+  author={ Andreas Baumann and Peter Eberhard },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2502.03916v1 },
+  url={ http://arxiv.org/abs/2502.03916v1 },
+  eprint={ 2502.03916v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2502.03916v1 },
+  abstract={ Large Language Models (LLMs) are increasingly helpful in text generation, even writing code in programming languages based on user prompts written in natural language. They are even applied to generate simulation models for multibody systems from natural language. Research results suggest that LLMs surpass the mere replication of existing code examples, where some LLMs have been trained on an open-source multibody simulation code. However, for closed-source simulation software, such results are not to be expected as their ideas and concepts might differ from other publicly available ones. LLMs can hallucinate for knowledge-intensive tasks, such as model creation, which can lead to wrong responses. This is especially the case for the LLM unknown closed-source simulation software. The same applies to other internal knowledge kept private to protect intellectual property or data privacy. The Retrieval-Augmented Generation (RAG) approach might yield a solution for these knowledge-intensive tasks. This paper explores the application of RAG to closed-source simulation software and presents first experiments. After a brief introduction to LLMs, the RAG approach, and the simulation method applied by the close-source simulation software, several examples are provided to test LLMs' knowledge of the simulation software and the creation of simulation models using two RAG systems. The examples show promising results indicating the benefits of applying RAG systems to closed-source simulation software, helping to access their knowledge. Nevertheless, they also reveal gaps in the applied information and open questions for further research. }
+}
+
+
+@article{2502.06652v1,
+  title={ Transparent NLP: Using RAG and LLM Alignment for Privacy Q&A },
+  author={ Anna Leschanowsky and Zahra Kolagar and Erion Çano and Ivan Habernal and Dara Hallinan and Emanuël A. P. Habets and Birgit Popp },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2502.06652v1 },
+  url={ http://arxiv.org/abs/2502.06652v1 },
+  eprint={ 2502.06652v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2502.06652v1 },
+  abstract={ The transparency principle of the General Data Protection Regulation (GDPR) requires data processing information to be clear, precise, and accessible. While language models show promise in this context, their probabilistic nature complicates truthfulness and comprehensibility.   This paper examines state-of-the-art Retrieval Augmented Generation (RAG) systems enhanced with alignment techniques to fulfill GDPR obligations. We evaluate RAG systems incorporating an alignment module like Rewindable Auto-regressive Inference (RAIN) and our proposed multidimensional extension, MultiRAIN, using a Privacy Q&A dataset. Responses are optimized for preciseness and comprehensibility and are assessed through 21 metrics, including deterministic and large language model-based evaluations.   Our results show that RAG systems with an alignment module outperform baseline RAG systems on most metrics, though none fully match human answers. Principal component analysis of the results reveals complex interactions between metrics, highlighting the need to refine metrics. This study provides a foundation for integrating advanced natural language processing systems into legal compliance frameworks. }
+}
+
+
+@article{2502.06872v1,
+  title={ Towards Trustworthy Retrieval Augmented Generation for Large Language Models: A Survey },
+  author={ Bo Ni and Zheyuan Liu and Leyao Wang and Yongjia Lei and Yuying Zhao and Xueqi Cheng and Qingkai Zeng and Luna Dong and Yinglong Xia and Krishnaram Kenthapadi and Ryan Rossi and Franck Dernoncourt and Md Mehrab Tanjim and Nesreen Ahmed and Xiaorui Liu and Wenqi Fan and Erik Blasch and Yu Wang and Meng Jiang and Tyler Derr },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2502.06872v1 },
+  url={ http://arxiv.org/abs/2502.06872v1 },
+  eprint={ 2502.06872v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2502.06872v1 },
+  abstract={ Retrieval-Augmented Generation (RAG) is an advanced technique designed to address the challenges of Artificial Intelligence-Generated Content (AIGC). By integrating context retrieval into content generation, RAG provides reliable and up-to-date external knowledge, reduces hallucinations, and ensures relevant context across a wide range of tasks. However, despite RAG's success and potential, recent studies have shown that the RAG paradigm also introduces new risks, including robustness issues, privacy concerns, adversarial attacks, and accountability issues. Addressing these risks is critical for future applications of RAG systems, as they directly impact their trustworthiness. Although various methods have been developed to improve the trustworthiness of RAG methods, there is a lack of a unified perspective and framework for research in this topic. Thus, in this paper, we aim to address this gap by providing a comprehensive roadmap for developing trustworthy RAG systems. We place our discussion around five key perspectives: reliability, privacy, safety, fairness, explainability, and accountability. For each perspective, we present a general framework and taxonomy, offering a structured approach to understanding the current challenges, evaluating existing solutions, and identifying promising future research directions. To encourage broader adoption and innovation, we also highlight the downstream applications where trustworthy RAG systems have a significant impact. }
+}
+
+
+@article{2502.17390v1,
+  title={ Mitigating Bias in RAG: Controlling the Embedder },
+  author={ Taeyoun Kim and Jacob Springer and Aditi Raghunathan and Maarten Sap },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2502.17390v1 },
+  url={ http://arxiv.org/abs/2502.17390v1 },
+  eprint={ 2502.17390v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2502.17390v1 },
+  abstract={ In retrieval augmented generation (RAG) systems, each individual component -- the LLM, embedder, and corpus -- could introduce biases in the form of skews towards outputting certain perspectives or identities. In this work, we study the conflict between biases of each component and their relationship to the overall bias of the RAG system, which we call bias conflict. Examining both gender and political biases as case studies, we show that bias conflict can be characterized through a linear relationship among components despite its complexity in 6 different LLMs. Through comprehensive fine-tuning experiments creating 120 differently biased embedders, we demonstrate how to control bias while maintaining utility and reveal the importance of reverse-biasing the embedder to mitigate bias in the overall system. Additionally, we find that LLMs and tasks exhibit varying sensitivities to the embedder bias, a crucial factor to consider for debiasing. Our results underscore that a fair RAG system can be better achieved by carefully controlling the bias of the embedder rather than increasing its fairness. }
+}
+
+
+@article{2503.10674v1,
+  title={ Enhancing Retrieval for ESGLLM via ESG-CID -- A Disclosure Content Index Finetuning Dataset for Mapping GRI and ESRS },
+  author={ Shafiuddin Rehan Ahmed and Ankit Parag Shah and Quan Hung Tran and Vivek Khetan and Sukryool Kang and Ankit Mehta and Yujia Bao and Wei Wei },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2503.10674v1 },
+  url={ http://arxiv.org/abs/2503.10674v1 },
+  eprint={ 2503.10674v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2503.10674v1 },
+  abstract={ Climate change has intensified the need for transparency and accountability in organizational practices, making Environmental, Social, and Governance (ESG) reporting increasingly crucial. Frameworks like the Global Reporting Initiative (GRI) and the new European Sustainability Reporting Standards (ESRS) aim to standardize ESG reporting, yet generating comprehensive reports remains challenging due to the considerable length of ESG documents and variability in company reporting styles. To facilitate ESG report automation, Retrieval-Augmented Generation (RAG) systems can be employed, but their development is hindered by a lack of labeled data suitable for training retrieval models. In this paper, we leverage an underutilized source of weak supervision -- the disclosure content index found in past ESG reports -- to create a comprehensive dataset, ESG-CID, for both GRI and ESRS standards. By extracting mappings between specific disclosure requirements and corresponding report sections, and refining them using a Large Language Model as a judge, we generate a robust training and evaluation set. We benchmark popular embedding models on this dataset and show that fine-tuning BERT-based models can outperform commercial embeddings and leading public models, even under temporal data splits for cross-report style transfer from GRI to ESRS }
+}
+
+
+@article{2503.15548v1,
+  title={ Privacy-Aware RAG: Secure and Isolated Knowledge Retrieval },
+  author={ Pengcheng Zhou and Yinglun Feng and Zhongliang Yang },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2503.15548v1 },
+  url={ http://arxiv.org/abs/2503.15548v1 },
+  eprint={ 2503.15548v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2503.15548v1 },
+  abstract={ The widespread adoption of Retrieval-Augmented Generation (RAG) systems in real-world applications has heightened concerns about the confidentiality and integrity of their proprietary knowledge bases. These knowledge bases, which play a critical role in enhancing the generative capabilities of Large Language Models (LLMs), are increasingly vulnerable to breaches that could compromise sensitive information. To address these challenges, this paper proposes an advanced encryption methodology designed to protect RAG systems from unauthorized access and data leakage. Our approach encrypts both textual content and its corresponding embeddings prior to storage, ensuring that all data remains securely encrypted. This mechanism restricts access to authorized entities with the appropriate decryption keys, thereby significantly reducing the risk of unintended data exposure. Furthermore, we demonstrate that our encryption strategy preserves the performance and functionality of RAG pipelines, ensuring compatibility across diverse domains and applications. To validate the robustness of our method, we provide comprehensive security proofs that highlight its resilience against potential threats and vulnerabilities. These proofs also reveal limitations in existing approaches, which often lack robustness, adaptability, or reliance on open-source models. Our findings suggest that integrating advanced encryption techniques into the design and deployment of RAG systems can effectively enhance privacy safeguards. This research contributes to the ongoing discourse on improving security measures for AI-driven services and advocates for stricter data protection standards within RAG architectures. }
+}
+
+
+@article{2504.12323v2,
+  title={ The Other Side of the Coin: Exploring Fairness in Retrieval-Augmented Generation },
+  author={ Zheng Zhang and Ning Li and Qi Liu and Rui Li and Weibo Gao and Qingyang Mao and Zhenya Huang and Baosheng Yu and Dacheng Tao },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.12323v2 },
+  url={ http://arxiv.org/abs/2504.12323v2 },
+  eprint={ 2504.12323v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2504.12323v2 },
+  abstract={ Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by retrieving relevant document from external knowledge sources. By referencing this external knowledge, RAG effectively reduces the generation of factually incorrect content and addresses hallucination issues within LLMs. Recently, there has been growing attention to improving the performance and efficiency of RAG systems from various perspectives. While these advancements have yielded significant results, the application of RAG in domains with considerable societal implications raises a critical question about fairness: What impact does the introduction of the RAG paradigm have on the fairness of LLMs? To address this question, we conduct extensive experiments by varying the LLMs, retrievers, and retrieval sources. Our experimental analysis reveals that the scale of the LLMs plays a significant role in influencing fairness outcomes within the RAG framework. When the model scale is smaller than 8B, the integration of retrieval mechanisms often exacerbates unfairness in small-scale LLMs (e.g., LLaMA3.2-1B, Mistral-7B, and LLaMA3-8B). To mitigate the fairness issues introduced by RAG for small-scale LLMs, we propose two approaches, FairFT and FairFilter. Specifically, in FairFT, we align the retriever with the LLM in terms of fairness, enabling it to retrieve documents that facilitate fairer model outputs. In FairFilter, we propose a fairness filtering mechanism to filter out biased content after retrieval. Finally, we validate our proposed approaches on real-world datasets, demonstrating their effectiveness in improving fairness while maintaining performance. }
+}
+
+
+@article{2504.15629v1,
+  title={ CiteFix: Enhancing RAG Accuracy Through Post-Processing Citation Correction },
+  author={ Harsh Maheshwari and Srikanth Tenneti and Alwarappan Nakkiran },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.15629v1 },
+  url={ http://arxiv.org/abs/2504.15629v1 },
+  eprint={ 2504.15629v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2504.15629v1 },
+  abstract={ Retrieval Augmented Generation (RAG) has emerged as a powerful application of Large Language Models (LLMs), revolutionizing information search and consumption. RAG systems combine traditional search capabilities with LLMs to generate comprehensive answers to user queries, ideally with accurate citations. However, in our experience of developing a RAG product, LLMs often struggle with source attribution, aligning with other industry studies reporting citation accuracy rates of only about 74% for popular generative search engines. To address this, we present efficient post-processing algorithms to improve citation accuracy in LLM-generated responses, with minimal impact on latency and cost. Our approaches cross-check generated citations against retrieved articles using methods including keyword + semantic matching, fine tuned model with BERTScore, and a lightweight LLM-based technique. Our experimental results demonstrate a relative improvement of 15.46% in the overall accuracy metrics of our RAG system. This significant enhancement potentially enables a shift from our current larger language model to a relatively smaller model that is approximately 12x more cost-effective and 3x faster in inference time, while maintaining comparable performance. This research contributes to enhancing the reliability and trustworthiness of AI-generated content in information retrieval and summarization tasks which is critical to gain customer trust especially in commercial products. }
+}
+
+
+@article{2504.16883v1,
+  title={ Enhancing Critical Thinking with AI: A Tailored Warning System for RAG Models },
+  author={ Xuyang Zhu and Sejoon Chang and Andrew Kuik },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.16883v1 },
+  url={ http://arxiv.org/abs/2504.16883v1 },
+  eprint={ 2504.16883v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.HC },
+  pdf={ http://arxiv.org/pdf/2504.16883v1 },
+  abstract={ Retrieval-Augmented Generation (RAG) systems offer a powerful approach to enhancing large language model (LLM) outputs by incorporating fact-checked, contextually relevant information. However, fairness and reliability concerns persist, as hallucinations can emerge at both the retrieval and generation stages, affecting users' reasoning and decision-making. Our research explores how tailored warning messages -- whose content depends on the specific context of hallucination -- shape user reasoning and actions in an educational quiz setting. Preliminary findings suggest that while warnings improve accuracy and awareness of high-level hallucinations, they may also introduce cognitive friction, leading to confusion and diminished trust in the system. By examining these interactions, this work contributes to the broader goal of AI-augmented reasoning: developing systems that actively support human reflection, critical thinking, and informed decision-making rather than passive information consumption. }
+}
+
+
+@article{2504.18024v1,
+  title={ SMARTFinRAG: Interactive Modularized Financial RAG Benchmark },
+  author={ Yiwei Zha },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.18024v1 },
+  url={ http://arxiv.org/abs/2504.18024v1 },
+  eprint={ 2504.18024v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CE },
+  pdf={ http://arxiv.org/pdf/2504.18024v1 },
+  abstract={ Financial sectors are rapidly adopting language model technologies, yet evaluating specialized RAG systems in this domain remains challenging. This paper introduces SMARTFinRAG, addressing three critical gaps in financial RAG assessment: (1) a fully modular architecture where components can be dynamically interchanged during runtime; (2) a document-centric evaluation paradigm generating domain-specific QA pairs from newly ingested financial documents; and (3) an intuitive interface bridging research-implementation divides. Our evaluation quantifies both retrieval efficacy and response quality, revealing significant performance variations across configurations. The platform's open-source architecture supports transparent, reproducible research while addressing practical deployment challenges faced by financial institutions implementing RAG systems. }
+}
+
+
+@article{2504.19101v1,
+  title={ Privacy-Preserving Federated Embedding Learning for Localized Retrieval-Augmented Generation },
+  author={ Qianren Mao and Qili Zhang and Hanwen Hao and Zhentao Han and Runhua Xu and Weifeng Jiang and Qi Hu and Zhijun Chen and Tyler Zhou and Bo Li and Yangqiu Song and Jin Dong and Jianxin Li and Philip S. Yu },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.19101v1 },
+  url={ http://arxiv.org/abs/2504.19101v1 },
+  eprint={ 2504.19101v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2504.19101v1 },
+  abstract={ Retrieval-Augmented Generation (RAG) has recently emerged as a promising solution for enhancing the accuracy and credibility of Large Language Models (LLMs), particularly in Question & Answer tasks. This is achieved by incorporating proprietary and private data from integrated databases. However, private RAG systems face significant challenges due to the scarcity of private domain data and critical data privacy issues. These obstacles impede the deployment of private RAG systems, as developing privacy-preserving RAG systems requires a delicate balance between data security and data availability. To address these challenges, we regard federated learning (FL) as a highly promising technology for privacy-preserving RAG services. We propose a novel framework called Federated Retrieval-Augmented Generation (FedE4RAG). This framework facilitates collaborative training of client-side RAG retrieval models. The parameters of these models are aggregated and distributed on a central-server, ensuring data privacy without direct sharing of raw data. In FedE4RAG, knowledge distillation is employed for communication between the server and client models. This technique improves the generalization of local RAG retrievers during the federated learning process. Additionally, we apply homomorphic encryption within federated learning to safeguard model parameters and mitigate concerns related to data leakage. Extensive experiments conducted on the real-world dataset have validated the effectiveness of FedE4RAG. The results demonstrate that our proposed framework can markedly enhance the performance of private RAG systems while maintaining robust data privacy protection. }
+}
+
+
+@article{2504.20898v2,
+  title={ CBM-RAG: Demonstrating Enhanced Interpretability in Radiology Report Generation with Multi-Agent RAG and Concept Bottleneck Models },
+  author={ Hasan Md Tusfiqur Alam and Devansh Srivastav and Abdulrahman Mohamed Selim and Md Abdul Kadir and Md Moktadirul Hoque Shuvo and Daniel Sonntag },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.20898v2 },
+  url={ http://arxiv.org/abs/2504.20898v2 },
+  eprint={ 2504.20898v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.AI },
+  pdf={ http://arxiv.org/pdf/2504.20898v2 },
+  doi={ 10.1145/3731406.3731970 },
+  abstract={ Advancements in generative Artificial Intelligence (AI) hold great promise for automating radiology workflows, yet challenges in interpretability and reliability hinder clinical adoption. This paper presents an automated radiology report generation framework that combines Concept Bottleneck Models (CBMs) with a Multi-Agent Retrieval-Augmented Generation (RAG) system to bridge AI performance with clinical explainability. CBMs map chest X-ray features to human-understandable clinical concepts, enabling transparent disease classification. Meanwhile, the RAG system integrates multi-agent collaboration and external knowledge to produce contextually rich, evidence-based reports. Our demonstration showcases the system's ability to deliver interpretable predictions, mitigate hallucinations, and generate high-quality, tailored reports with an interactive interface addressing accuracy, trust, and usability challenges. This framework provides a pathway to improving diagnostic consistency and empowering radiologists with actionable insights. }
+}
+
+
+@article{2505.08445v1,
+  title={ Optimizing Retrieval-Augmented Generation: Analysis of Hyperparameter Impact on Performance and Efficiency },
+  author={ Adel Ammar and Anis Koubaa and Omer Nacar and Wadii Boulila },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2505.08445v1 },
+  url={ http://arxiv.org/abs/2505.08445v1 },
+  eprint={ 2505.08445v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.LG },
+  pdf={ http://arxiv.org/pdf/2505.08445v1 },
+  abstract={ Large language models achieve high task performance yet often hallucinate or rely on outdated knowledge. Retrieval-augmented generation (RAG) addresses these gaps by coupling generation with external search. We analyse how hyperparameters influence speed and quality in RAG systems, covering Chroma and Faiss vector stores, chunking policies, cross-encoder re-ranking, and temperature, and we evaluate six metrics: faithfulness, answer correctness, answer relevancy, context precision, context recall, and answer similarity. Chroma processes queries 13% faster, whereas Faiss yields higher retrieval precision, revealing a clear speed-accuracy trade-off. Naive fixed-length chunking with small windows and minimal overlap outperforms semantic segmentation while remaining the quickest option. Re-ranking provides modest gains in retrieval quality yet increases runtime by roughly a factor of 5, so its usefulness depends on latency constraints. These results help practitioners balance computational cost and accuracy when tuning RAG systems for transparent, up-to-date responses. Finally, we re-evaluate the top configurations with a corrective RAG workflow and show that their advantages persist when the model can iteratively request additional evidence. We obtain a near-perfect context precision (99%), which demonstrates that RAG systems can achieve extremely high retrieval accuracy with the right combination of hyperparameters, with significant implications for applications where retrieval quality directly impacts downstream task performance, such as clinical decision support in healthcare. }
+}
+
+
+@article{2505.08728v1,
+  title={ Securing RAG: A Risk Assessment and Mitigation Framework },
+  author={ Lukas Ammann and Sara Ott and Christoph R. Landolt and Marco P. Lehmann },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2505.08728v1 },
+  url={ http://arxiv.org/abs/2505.08728v1 },
+  eprint={ 2505.08728v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2505.08728v1 },
+  abstract={ Retrieval Augmented Generation (RAG) has emerged as the de facto industry standard for user-facing NLP applications, offering the ability to integrate data without re-training or fine-tuning Large Language Models (LLMs). This capability enhances the quality and accuracy of responses but also introduces novel security and privacy challenges, particularly when sensitive data is integrated. With the rapid adoption of RAG, securing data and services has become a critical priority. This paper first reviews the vulnerabilities of RAG pipelines, and outlines the attack surface from data pre-processing and data storage management to integration with LLMs. The identified risks are then paired with corresponding mitigations in a structured overview. In a second step, the paper develops a framework that combines RAG-specific security considerations, with existing general security guidelines, industry standards, and best practices. The proposed framework aims to guide the implementation of robust, compliant, secure, and trustworthy RAG systems. }
+}
+
+
+@article{2312.10997v5,
+  title={ Retrieval-Augmented Generation for Large Language Models: A Survey },
+  author={ Yunfan Gao and Yun Xiong and Xinyu Gao and Kangxiang Jia and Jinliu Pan and Yuxi Bi and Yi Dai and Jiawei Sun and Meng Wang and Haofen Wang },
+  year={ 2023 },
+  journal={ arXiv preprint arXiv:2312.10997v5 },
+  url={ http://arxiv.org/abs/2312.10997v5 },
+  eprint={ 2312.10997v5 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2312.10997v5 },
+  abstract={ Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development. }
+}
+
+
+@article{2402.16893v1,
+  title={ The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG) },
+  author={ Shenglai Zeng and Jiankun Zhang and Pengfei He and Yue Xing and Yiding Liu and Han Xu and Jie Ren and Shuaiqiang Wang and Dawei Yin and Yi Chang and Jiliang Tang },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2402.16893v1 },
+  url={ http://arxiv.org/abs/2402.16893v1 },
+  eprint={ 2402.16893v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2402.16893v1 },
+  abstract={ Retrieval-augmented generation (RAG) is a powerful technique to facilitate language model with proprietary and private data, where data privacy is a pivotal concern. Whereas extensive research has demonstrated the privacy risks of large language models (LLMs), the RAG technique could potentially reshape the inherent behaviors of LLM generation, posing new privacy issues that are currently under-explored. In this work, we conduct extensive empirical studies with novel attack methods, which demonstrate the vulnerability of RAG systems on leaking the private retrieval database. Despite the new risk brought by RAG on the retrieval data, we further reveal that RAG can mitigate the leakage of the LLMs' training data. Overall, we provide new insights in this paper for privacy protection of retrieval-augmented LLMs, which benefit both LLMs and RAG systems builders. Our code is available at https://github.com/phycholosogy/RAG-privacy. }
+}
+
+
+@article{2404.04044v2,
+  title={ A Comparison of Methods for Evaluating Generative IR },
+  author={ Negar Arabzadeh and Charles L. A. Clarke },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2404.04044v2 },
+  url={ http://arxiv.org/abs/2404.04044v2 },
+  eprint={ 2404.04044v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2404.04044v2 },
+  abstract={ Information retrieval systems increasingly incorporate generative components. For example, in a retrieval augmented generation (RAG) system, a retrieval component might provide a source of ground truth, while a generative component summarizes and augments its responses. In other systems, a large language model (LLM) might directly generate responses without consulting a retrieval component. While there are multiple definitions of generative information retrieval (Gen-IR) systems, in this paper we focus on those systems where the system's response is not drawn from a fixed collection of documents or passages. The response to a query may be entirely new text. Since traditional IR evaluation methods break down under this model, we explore various methods that extend traditional offline evaluation approaches to the Gen-IR context. Offline IR evaluation traditionally employs paid human assessors, but increasingly LLMs are replacing human assessment, demonstrating capabilities similar or superior to crowdsourced labels. Given that Gen-IR systems do not generate responses from a fixed set, we assume that methods for Gen-IR evaluation must largely depend on LLM-generated labels. Along with methods based on binary and graded relevance, we explore methods based on explicit subtopics, pairwise preferences, and embeddings. We first validate these methods against human assessments on several TREC Deep Learning Track tasks; we then apply these methods to evaluate the output of several purely generative systems. For each method we consider both its ability to act autonomously, without the need for human labels or other input, and its ability to support human auditing. To trust these methods, we must be assured that their results align with human assessments. In order to do so, evaluation criteria must be transparent, so that outcomes can be audited by human assessors. }
+}
+
+
+@article{2405.20446v3,
+  title={ Is My Data in Your Retrieval Database? Membership Inference Attacks Against Retrieval Augmented Generation },
+  author={ Maya Anderson and Guy Amit and Abigail Goldsteen },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2405.20446v3 },
+  url={ http://arxiv.org/abs/2405.20446v3 },
+  eprint={ 2405.20446v3 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2405.20446v3 },
+  doi={ 10.5220/0013108300003899 },
+  abstract={ Retrieval Augmented Generation (RAG) systems have shown great promise in natural language processing. However, their reliance on data stored in a retrieval database, which may contain proprietary or sensitive information, introduces new privacy concerns. Specifically, an attacker may be able to infer whether a certain text passage appears in the retrieval database by observing the outputs of the RAG system, an attack known as a Membership Inference Attack (MIA). Despite the significance of this threat, MIAs against RAG systems have yet remained under-explored. This study addresses this gap by introducing an efficient and easy-to-use method for conducting MIA against RAG systems. We demonstrate the effectiveness of our attack using two benchmark datasets and multiple generative models, showing that the membership of a document in the retrieval database can be efficiently determined through the creation of an appropriate prompt in both black-box and gray-box settings. Moreover, we introduce an initial defense strategy based on adding instructions to the RAG template, which shows high effectiveness for some datasets and models. Our findings highlight the importance of implementing security countermeasures in deployed RAG systems and developing more advanced defenses to protect the privacy and security of retrieval databases. }
+}
+
+
+@article{2405.20485v2,
+  title={ Phantom: General Trigger Attacks on Retrieval Augmented Language Generation },
+  author={ Harsh Chaudhari and Giorgio Severi and John Abascal and Matthew Jagielski and Christopher A. Choquette-Choo and Milad Nasr and Cristina Nita-Rotaru and Alina Oprea },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2405.20485v2 },
+  url={ http://arxiv.org/abs/2405.20485v2 },
+  eprint={ 2405.20485v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2405.20485v2 },
+  abstract={ Retrieval Augmented Generation (RAG) expands the capabilities of modern large language models (LLMs), by anchoring, adapting, and personalizing their responses to the most relevant knowledge sources. It is particularly useful in chatbot applications, allowing developers to customize LLM output without expensive retraining. Despite their significant utility in various applications, RAG systems present new security risks. In this work, we propose new attack vectors that allow an adversary to inject a single malicious document into a RAG system's knowledge base, and mount a backdoor poisoning attack. We design Phantom, a general two-stage optimization framework against RAG systems, that crafts a malicious poisoned document leading to an integrity violation in the model's output. First, the document is constructed to be retrieved only when a specific trigger sequence of tokens appears in the victim's queries. Second, the document is further optimized with crafted adversarial text that induces various adversarial objectives on the LLM output, including refusal to answer, reputation damage, privacy violations, and harmful behaviors. We demonstrate our attacks on multiple LLM architectures, including Gemma, Vicuna, and Llama, and show that they transfer to GPT-3.5 Turbo and GPT-4. Finally, we successfully conducted a Phantom attack on NVIDIA's black-box production RAG system, "Chat with RTX". }
+}
+
+
+@article{2406.14773v2,
+  title={ Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data },
+  author={ Shenglai Zeng and Jiankun Zhang and Pengfei He and Jie Ren and Tianqi Zheng and Hanqing Lu and Han Xu and Hui Liu and Yue Xing and Jiliang Tang },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2406.14773v2 },
+  url={ http://arxiv.org/abs/2406.14773v2 },
+  eprint={ 2406.14773v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2406.14773v2 },
+  abstract={ Retrieval-augmented generation (RAG) enhances the outputs of language models by integrating relevant information retrieved from external knowledge sources. However, when the retrieval process involves private data, RAG systems may face severe privacy risks, potentially leading to the leakage of sensitive information. To address this issue, we propose using synthetic data as a privacy-preserving alternative for the retrieval data. We propose SAGE, a novel two-stage synthetic data generation paradigm. In the stage-1, we employ an attribute-based extraction and generation approach to preserve key contextual information from the original data. In the stage-2, we further enhance the privacy properties of the synthetic data through an agent-based iterative refinement process. Extensive experiments demonstrate that using our synthetic data as the retrieval context achieves comparable performance to using the original data while substantially reducing privacy risks. Our work takes the first step towards investigating the possibility of generating high-utility and privacy-preserving synthetic data for RAG, opening up new opportunities for the safe application of RAG systems in various domains. }
+}
+
+
+@article{2406.19234v2,
+  title={ Generating Is Believing: Membership Inference Attacks against Retrieval-Augmented Generation },
+  author={ Yuying Li and Gaoyang Liu and Chen Wang and Yang Yang },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2406.19234v2 },
+  url={ http://arxiv.org/abs/2406.19234v2 },
+  eprint={ 2406.19234v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2406.19234v2 },
+  abstract={ Retrieval-Augmented Generation (RAG) is a state-of-the-art technique that mitigates issues such as hallucinations and knowledge staleness in Large Language Models (LLMs) by retrieving relevant knowledge from an external database to assist in content generation. Existing research has demonstrated potential privacy risks associated with the LLMs of RAG. However, the privacy risks posed by the integration of an external database, which often contains sensitive data such as medical records or personal identities, have remained largely unexplored. In this paper, we aim to bridge this gap by focusing on membership privacy of RAG's external database, with the aim of determining whether a given sample is part of the RAG's database. Our basic idea is that if a sample is in the external database, it will exhibit a high degree of semantic similarity to the text generated by the RAG system. We present S$^2$MIA, a \underlineMembership \underlineInference \underlineAttack that utilizes the \underlineSemantic \underlineSimilarity between a given sample and the content generated by the RAG system. With our proposed S$^2$MIA, we demonstrate the potential to breach the membership privacy of the RAG database. Extensive experiment results demonstrate that S$^2$MIA can achieve a strong inference performance compared with five existing MIAs, and is able to escape from the protection of three representative defenses. }
+}
+
+
+@article{2407.01110v1,
+  title={ SecGenAI: Enhancing Security of Cloud-based Generative AI Applications within Australian Critical Technologies of National Interest },
+  author={ Christoforus Yoga Haryanto and Minh Hieu Vu and Trung Duc Nguyen and Emily Lomempow and Yulia Nurliana and Sona Taheri },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2407.01110v1 },
+  url={ http://arxiv.org/abs/2407.01110v1 },
+  eprint={ 2407.01110v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2407.01110v1 },
+  abstract={ The rapid advancement of Generative AI (GenAI) technologies offers transformative opportunities within Australia's critical technologies of national interest while introducing unique security challenges. This paper presents SecGenAI, a comprehensive security framework for cloud-based GenAI applications, with a focus on Retrieval-Augmented Generation (RAG) systems. SecGenAI addresses functional, infrastructure, and governance requirements, integrating end-to-end security analysis to generate specifications emphasizing data privacy, secure deployment, and shared responsibility models. Aligned with Australian Privacy Principles, AI Ethics Principles, and guidelines from the Australian Cyber Security Centre and Digital Transformation Agency, SecGenAI mitigates threats such as data leakage, adversarial attacks, and model inversion. The framework's novel approach combines advanced machine learning techniques with robust security measures, ensuring compliance with Australian regulations while enhancing the reliability and trustworthiness of GenAI systems. This research contributes to the field of intelligent systems by providing actionable strategies for secure GenAI implementation in industry, fostering innovation in AI applications, and safeguarding national interests. }
+}
+
+
+@article{2407.14717v2,
+  title={ Differential Privacy of Cross-Attention with Provable Guarantee },
+  author={ Yingyu Liang and Zhenmei Shi and Zhao Song and Yufa Zhou },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2407.14717v2 },
+  url={ http://arxiv.org/abs/2407.14717v2 },
+  eprint={ 2407.14717v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.LG },
+  pdf={ http://arxiv.org/pdf/2407.14717v2 },
+  abstract={ Cross-attention has become a fundamental module nowadays in many important artificial intelligence applications, e.g., retrieval-augmented generation (RAG), system prompt, guided stable diffusion, and many more. Ensuring cross-attention privacy is crucial and urgently needed because its key and value matrices may contain sensitive information about model providers and their users. In this work, we design a novel differential privacy (DP) data structure to address the privacy security of cross-attention with a theoretical guarantee. In detail, let $n$ be the input token length of system prompt/RAG data, $d$ be the feature dimension, $0 < \alpha \le 1$ be the relative error parameter, $R$ be the maximum value of the query and key matrices, $R_w$ be the maximum value of the value matrix, and $r,s,\epsilon_s$ be parameters of polynomial kernel methods. Then, our data structure requires $\widetildeO(ndr^2)$ memory consumption with $\widetildeO(nr^2)$ initialization time complexity and $\widetildeO(\alpha^-1 r^2)$ query time complexity for a single token query. In addition, our data structure can guarantee that the process of answering user query satisfies $(\epsilon, \delta)$-DP with $\widetildeO(n^-1 \epsilon^-1 \alpha^-1/2 R^2s R_w r^2)$ additive error and $n^-1 (\alpha + \epsilon_s)$ relative error between our output and the true answer. Furthermore, our result is robust to adaptive queries in which users can intentionally attack the cross-attention system. To our knowledge, this is the first work to provide DP for cross-attention and is promising to inspire more privacy algorithm design in large generative models (LGMs). }
+}
+
+
+@article{2409.03759v1,
+  title={ VERA: Validation and Evaluation of Retrieval-Augmented Systems },
+  author={ Tianyu Ding and Adi Banerjee and Laurent Mombaerts and Yunhong Li and Tarik Borogovac and Juan Pablo De la Cruz Weinstein },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2409.03759v1 },
+  url={ http://arxiv.org/abs/2409.03759v1 },
+  eprint={ 2409.03759v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2409.03759v1 },
+  abstract={ The increasing use of Retrieval-Augmented Generation (RAG) systems in various applications necessitates stringent protocols to ensure RAG systems accuracy, safety, and alignment with user intentions. In this paper, we introduce VERA (Validation and Evaluation of Retrieval-Augmented Systems), a framework designed to enhance the transparency and reliability of outputs from large language models (LLMs) that utilize retrieved information. VERA improves the way we evaluate RAG systems in two important ways: (1) it introduces a cross-encoder based mechanism that encompasses a set of multidimensional metrics into a single comprehensive ranking score, addressing the challenge of prioritizing individual metrics, and (2) it employs Bootstrap statistics on LLM-based metrics across the document repository to establish confidence bounds, ensuring the repositorys topical coverage and improving the overall reliability of retrieval systems. Through several use cases, we demonstrate how VERA can strengthen decision-making processes and trust in AI applications. Our findings not only contribute to the theoretical understanding of LLM-based RAG evaluation metric but also promote the practical implementation of responsible AI systems, marking a significant advancement in the development of reliable and transparent generative AI technologies. }
+}
+
+
+@article{2409.10102v1,
+  title={ Trustworthiness in Retrieval-Augmented Generation Systems: A Survey },
+  author={ Yujia Zhou and Yan Liu and Xiaoxi Li and Jiajie Jin and Hongjin Qian and Zheng Liu and Chaozhuo Li and Zhicheng Dou and Tsung-Yi Ho and Philip S. Yu },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2409.10102v1 },
+  url={ http://arxiv.org/abs/2409.10102v1 },
+  eprint={ 2409.10102v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2409.10102v1 },
+  abstract={ Retrieval-Augmented Generation (RAG) has quickly grown into a pivotal paradigm in the development of Large Language Models (LLMs). While much of the current research in this field focuses on performance optimization, particularly in terms of accuracy and efficiency, the trustworthiness of RAG systems remains an area still under exploration. From a positive perspective, RAG systems are promising to enhance LLMs by providing them with useful and up-to-date knowledge from vast external databases, thereby mitigating the long-standing problem of hallucination. While from a negative perspective, RAG systems are at the risk of generating undesirable contents if the retrieved information is either inappropriate or poorly utilized. To address these concerns, we propose a unified framework that assesses the trustworthiness of RAG systems across six key dimensions: factuality, robustness, fairness, transparency, accountability, and privacy. Within this framework, we thoroughly review the existing literature on each dimension. Additionally, we create the evaluation benchmark regarding the six dimensions and conduct comprehensive evaluations for a variety of proprietary and open-source models. Finally, we identify the potential challenges for future research based on our investigation results. Through this work, we aim to lay a structured foundation for future investigations and provide practical insights for enhancing the trustworthiness of RAG systems in real-world applications. }
+}
+
+
+@article{2409.11598v3,
+  title={ Towards Fair RAG: On the Impact of Fair Ranking in Retrieval-Augmented Generation },
+  author={ To Eun Kim and Fernando Diaz },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2409.11598v3 },
+  url={ http://arxiv.org/abs/2409.11598v3 },
+  eprint={ 2409.11598v3 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2409.11598v3 },
+  abstract={ Modern language models frequently include retrieval components to improve their outputs, giving rise to a growing number of retrieval-augmented generation (RAG) systems. Yet, most existing work in RAG has underemphasized fair ranking techniques and neglected the diverse interests of all stakeholders. In this paper, we present the first comprehensive study of RAG systems that incorporate fairness-aware rankings, focusing on both ranking fairness and attribution fairness - ensuring equitable exposure of sources cited in the final text. We specifically examine item-side fairness, i.e., whether retrieved documents receive balanced exposure, and assess how this affects both the system's overall performance and the eventual distribution of cited sources. Across twelve RAG models and seven tasks, we find that fairness-aware retrieval frequently retains or even improves ranking effectiveness and generation quality, countering the widespread belief that fairness compromises system performance. Moreover, we show that fair retrieval leads to more balanced attribution in the final responses, ensuring that the cited sources are credited more equitably. Our results underscore the importance of item-side fairness throughout both retrieval and generation phases, offering key insights for building more responsible and equitable RAG systems and illustrating promising avenues for future exploration in fair ranking and source attribution. }
+}
+
+
+@article{2410.01066v2,
+  title={ From Natural Language to SQL: Review of LLM-based Text-to-SQL Systems },
+  author={ Ali Mohammadjafari and Anthony S. Maida and Raju Gottumukkala },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2410.01066v2 },
+  url={ http://arxiv.org/abs/2410.01066v2 },
+  eprint={ 2410.01066v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2410.01066v2 },
+  abstract={ LLMs when used with Retrieval Augmented Generation (RAG), are greatly improving the SOTA of translating natural language queries to structured and correct SQL. Unlike previous reviews, this survey provides a comprehensive study of the evolution of LLM-based text-to-SQL systems, from early rule-based models to advanced LLM approaches that use (RAG) systems. We discuss benchmarks, evaluation methods, and evaluation metrics. Also, we uniquely study the use of Graph RAGs for better contextual accuracy and schema linking in these systems. Finally, we highlight key challenges such as computational efficiency, model robustness, and data privacy toward improvements of LLM-based text-to-SQL systems. }
+}
+
+
+@article{2410.05930v1,
+  title={ Fortify Your Foundations: Practical Privacy and Security for Foundation Model Deployments In The Cloud },
+  author={ Marcin Chrapek and Anjo Vahldiek-Oberwagner and Marcin Spoczynski and Scott Constable and Mona Vij and Torsten Hoefler },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2410.05930v1 },
+  url={ http://arxiv.org/abs/2410.05930v1 },
+  eprint={ 2410.05930v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2410.05930v1 },
+  abstract={ Foundation Models (FMs) display exceptional performance in tasks such as natural language processing and are being applied across a growing range of disciplines. Although typically trained on large public datasets, FMs are often fine-tuned or integrated into Retrieval-Augmented Generation (RAG) systems, which rely on private data. This access, along with their size and costly training, heightens the risk of intellectual property theft. Moreover, multimodal FMs may expose sensitive information. In this work, we examine the FM threat model and discuss the practicality and comprehensiveness of various approaches for securing against them, such as ML-based methods and trusted execution environments (TEEs). We demonstrate that TEEs offer an effective balance between strong security properties, usability, and performance. Specifically, we present a solution achieving less than 10\% overhead versus bare metal for the full Llama2 7B and 13B inference pipelines running inside \intel\ SGX and \intel\ TDX. We also share our configuration files and insights from our implementation. To our knowledge, our work is the first to show the practicality of TEEs for securing FMs. }
+}
+
+
+@article{2410.15944v1,
+  title={ Developing Retrieval Augmented Generation (RAG) based LLM Systems from PDFs: An Experience Report },
+  author={ Ayman Asad Khan and Md Toufique Hasan and Kai Kristian Kemell and Jussi Rasku and Pekka Abrahamsson },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2410.15944v1 },
+  url={ http://arxiv.org/abs/2410.15944v1 },
+  eprint={ 2410.15944v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.SE },
+  pdf={ http://arxiv.org/pdf/2410.15944v1 },
+  abstract={ This paper presents an experience report on the development of Retrieval Augmented Generation (RAG) systems using PDF documents as the primary data source. The RAG architecture combines generative capabilities of Large Language Models (LLMs) with the precision of information retrieval. This approach has the potential to redefine how we interact with and augment both structured and unstructured knowledge in generative models to enhance transparency, accuracy, and contextuality of responses. The paper details the end-to-end pipeline, from data collection, preprocessing, to retrieval indexing and response generation, highlighting technical challenges and practical solutions. We aim to offer insights to researchers and practitioners developing similar systems using two distinct approaches: OpenAI's Assistant API with GPT Series and Llama's open-source models. The practical implications of this research lie in enhancing the reliability of generative AI systems in various sectors where domain-specific knowledge and real-time information retrieval is important. The Python code used in this work is also available at: https://github.com/GPT-Laboratory/RAG-LLM-Development-Guidebook-from-PDFs. }
+}
+
+
+@article{2411.01705v2,
+  title={ Data Extraction Attacks in Retrieval-Augmented Generation via Backdoors },
+  author={ Yuefeng Peng and Junda Wang and Hong Yu and Amir Houmansadr },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2411.01705v2 },
+  url={ http://arxiv.org/abs/2411.01705v2 },
+  eprint={ 2411.01705v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2411.01705v2 },
+  abstract={ Despite significant advancements, large language models (LLMs) still struggle with providing accurate answers when lacking domain-specific or up-to-date knowledge. Retrieval-Augmented Generation (RAG) addresses this limitation by incorporating external knowledge bases, but it also introduces new attack surfaces. In this paper, we investigate data extraction attacks targeting RAG's knowledge databases. We show that previous prompt injection-based extraction attacks largely rely on the instruction-following capabilities of LLMs. As a result, they fail on models that are less responsive to such malicious prompts -- for example, our experiments show that state-of-the-art attacks achieve near-zero success on Gemma-2B-IT. Moreover, even for models that can follow these instructions, we found fine-tuning may significantly reduce attack performance. To further reveal the vulnerability, we propose to backdoor RAG, where a small portion of poisoned data is injected during the fine-tuning phase to create a backdoor within the LLM. When this compromised LLM is integrated into a RAG system, attackers can exploit specific triggers in prompts to manipulate the LLM to leak documents from the retrieval database. By carefully designing the poisoned data, we achieve both verbatim and paraphrased document extraction. For example, on Gemma-2B-IT, we show that with only 5\% poisoned data, our method achieves an average success rate of 94.1\% for verbatim extraction (ROUGE-L score: 82.1) and 63.6\% for paraphrased extraction (average ROUGE score: 66.4) across four datasets. These results underscore the privacy risks associated with the supply chain when deploying RAG systems. }
+}
+
+
+@article{2411.13173v2,
+  title={ Writing Style Matters: An Examination of Bias and Fairness in Information Retrieval Systems },
+  author={ Hongliu Cao },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2411.13173v2 },
+  url={ http://arxiv.org/abs/2411.13173v2 },
+  eprint={ 2411.13173v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2411.13173v2 },
+  doi={ 10.1145/3701551.3703514 },
+  abstract={ The rapid advancement of Language Model technologies has opened new opportunities, but also introduced new challenges related to bias and fairness. This paper explores the uncharted territory of potential biases in state-of-the-art universal text embedding models towards specific document and query writing styles within Information Retrieval (IR) systems. Our investigation reveals that different embedding models exhibit different preferences of document writing style, while more informal and emotive styles are less favored by most embedding models. In terms of query writing styles, many embedding models tend to match the style of the query with the style of the retrieved documents, but some show a consistent preference for specific styles. Text embedding models fine-tuned on synthetic data generated by LLMs display a consistent preference for certain style of generated data. These biases in text embedding based IR systems can inadvertently silence or marginalize certain communication styles, thereby posing a significant threat to fairness in information retrieval. Finally, we also compare the answer styles of Retrieval Augmented Generation (RAG) systems based on different LLMs and find out that most text embedding models are biased towards LLM's answer styles when used as evaluation metrics for answer correctness. This study sheds light on the critical issue of writing style based bias in IR systems, offering valuable insights for the development of more fair and robust models. }
+}
+
+
+@article{2411.16391v2,
+  title={ Human-Calibrated Automated Testing and Validation of Generative Language Models },
+  author={ Agus Sudjianto and Aijun Zhang and Srinivas Neppalli and Tarun Joshi and Michal Malohlava },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2411.16391v2 },
+  url={ http://arxiv.org/abs/2411.16391v2 },
+  eprint={ 2411.16391v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2411.16391v2 },
+  abstract={ This paper introduces a comprehensive framework for the evaluation and validation of generative language models (GLMs), with a focus on Retrieval-Augmented Generation (RAG) systems deployed in high-stakes domains such as banking. GLM evaluation is challenging due to open-ended outputs and subjective quality assessments. Leveraging the structured nature of RAG systems, where generated responses are grounded in a predefined document collection, we propose the Human-Calibrated Automated Testing (HCAT) framework. HCAT integrates a) automated test generation using stratified sampling, b) embedding-based metrics for explainable assessment of functionality, risk and safety attributes, and c) a two-stage calibration approach that aligns machine-generated evaluations with human judgments through probability calibration and conformal prediction.   In addition, the framework includes robustness testing to evaluate model performance against adversarial, out-of-distribution, and varied input conditions, as well as targeted weakness identification using marginal and bivariate analysis to pinpoint specific areas for improvement. This human-calibrated, multi-layered evaluation framework offers a scalable, transparent, and interpretable approach to GLM assessment, providing a practical and reliable solution for deploying GLMs in applications where accuracy, transparency, and regulatory compliance are paramount. }
+}
+
+
+@article{2412.07626v2,
+  title={ OmniDocBench: Benchmarking Diverse PDF Document Parsing with Comprehensive Annotations },
+  author={ Linke Ouyang and Yuan Qu and Hongbin Zhou and Jiawei Zhu and Rui Zhang and Qunshu Lin and Bin Wang and Zhiyuan Zhao and Man Jiang and Xiaomeng Zhao and Jin Shi and Fan Wu and Pei Chu and Minghao Liu and Zhenxiang Li and Chao Xu and Bo Zhang and Botian Shi and Zhongying Tu and Conghui He },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.07626v2 },
+  url={ http://arxiv.org/abs/2412.07626v2 },
+  eprint={ 2412.07626v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CV },
+  pdf={ http://arxiv.org/pdf/2412.07626v2 },
+  abstract={ Document content extraction is a critical task in computer vision, underpinning the data needs of large language models (LLMs) and retrieval-augmented generation (RAG) systems. Despite recent progress, current document parsing methods have not been fairly and comprehensively evaluated due to the narrow coverage of document types and the simplified, unrealistic evaluation procedures in existing benchmarks. To address these gaps, we introduce OmniDocBench, a novel benchmark featuring high-quality annotations across nine document sources, including academic papers, textbooks, and more challenging cases such as handwritten notes and densely typeset newspapers. OmniDocBench supports flexible, multi-level evaluations--ranging from an end-to-end assessment to the task-specific and attribute--based analysis using 19 layout categories and 15 attribute labels. We conduct a thorough evaluation of both pipeline-based methods and end-to-end vision-language models, revealing their strengths and weaknesses across different document types. OmniDocBench sets a new standard for the fair, diverse, and fine-grained evaluation in document parsing. Dataset and code are available at https://github.com/opendatalab/OmniDocBench. }
+}
+
+
+@article{2412.12358v1,
+  title={ BioRAGent: A Retrieval-Augmented Generation System for Showcasing Generative Query Expansion and Domain-Specific Search for Scientific Q&A },
+  author={ Samy Ateia and Udo Kruschwitz },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.12358v1 },
+  url={ http://arxiv.org/abs/2412.12358v1 },
+  eprint={ 2412.12358v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2412.12358v1 },
+  abstract={ We present BioRAGent, an interactive web-based retrieval-augmented generation (RAG) system for biomedical question answering. The system uses large language models (LLMs) for query expansion, snippet extraction, and answer generation while maintaining transparency through citation links to the source documents and displaying generated queries for further editing. Building on our successful participation in the BioASQ 2024 challenge, we demonstrate how few-shot learning with LLMs can be effectively applied for a professional search setting. The system supports both direct short paragraph style responses and responses with inline citations. Our demo is available online, and the source code is publicly accessible through GitHub. }
+}
+
+
+@article{2412.13720v2,
+  title={ Federated Learning and RAG Integration: A Scalable Approach for Medical Large Language Models },
+  author={ Jincheol Jung and Hongju Jeong and Eui-Nam Huh },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.13720v2 },
+  url={ http://arxiv.org/abs/2412.13720v2 },
+  eprint={ 2412.13720v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2412.13720v2 },
+  abstract={ This study analyzes the performance of domain-specific Large Language Models (LLMs) for the medical field by integrating Retrieval-Augmented Generation (RAG) systems within a federated learning framework. Leveraging the inherent advantages of federated learning, such as preserving data privacy and enabling distributed computation, this research explores the integration of RAG systems with models trained under varying client configurations to optimize performance. Experimental results demonstrate that the federated learning-based models integrated with RAG systems consistently outperform their non-integrated counterparts across all evaluation metrics. This study highlights the potential of combining federated learning and RAG systems for developing domain-specific LLMs in the medical field, providing a scalable and privacy-preserving solution for enhancing text generation capabilities. }
+}
+
+
+@article{2412.14457v1,
+  title={ VISA: Retrieval Augmented Generation with Visual Source Attribution },
+  author={ Xueguang Ma and Shengyao Zhuang and Bevan Koopman and Guido Zuccon and Wenhu Chen and Jimmy Lin },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.14457v1 },
+  url={ http://arxiv.org/abs/2412.14457v1 },
+  eprint={ 2412.14457v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2412.14457v1 },
+  abstract={ Generation with source attribution is important for enhancing the verifiability of retrieval-augmented generation (RAG) systems. However, existing approaches in RAG primarily link generated content to document-level references, making it challenging for users to locate evidence among multiple content-rich retrieved documents. To address this challenge, we propose Retrieval-Augmented Generation with Visual Source Attribution (VISA), a novel approach that combines answer generation with visual source attribution. Leveraging large vision-language models (VLMs), VISA identifies the evidence and highlights the exact regions that support the generated answers with bounding boxes in the retrieved document screenshots. To evaluate its effectiveness, we curated two datasets: Wiki-VISA, based on crawled Wikipedia webpage screenshots, and Paper-VISA, derived from PubLayNet and tailored to the medical domain. Experimental results demonstrate the effectiveness of VISA for visual source attribution on documents' original look, as well as highlighting the challenges for improvement. Code, data, and model checkpoints will be released. }
+}
+
+
+@article{2412.16086v2,
+  title={ Towards Interpretable Radiology Report Generation via Concept Bottlenecks using a Multi-Agentic RAG },
+  author={ Hasan Md Tusfiqur Alam and Devansh Srivastav and Md Abdul Kadir and Daniel Sonntag },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.16086v2 },
+  url={ http://arxiv.org/abs/2412.16086v2 },
+  eprint={ 2412.16086v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2412.16086v2 },
+  doi={ 10.1007/978-3-031-88714-7_18 },
+  abstract={ Deep learning has advanced medical image classification, but interpretability challenges hinder its clinical adoption. This study enhances interpretability in Chest X-ray (CXR) classification by using concept bottleneck models (CBMs) and a multi-agent Retrieval-Augmented Generation (RAG) system for report generation. By modeling relationships between visual features and clinical concepts, we create interpretable concept vectors that guide a multi-agent RAG system to generate radiology reports, enhancing clinical relevance, explainability, and transparency. Evaluation of the generated reports using an LLM-as-a-judge confirmed the interpretability and clinical utility of our model's outputs. On the COVID-QU dataset, our model achieved 81% classification accuracy and demonstrated robust report generation performance, with five key metrics ranging between 84% and 90%. This interpretable multi-agent framework bridges the gap between high-performance AI and the explainability required for reliable AI-driven CXR analysis in clinical settings. Our code is available at https://github.com/tifat58/IRR-with-CBM-RAG.git. }
+}
+
+
+@article{2412.18295v2,
+  title={ Pirates of the RAG: Adaptively Attacking LLMs to Leak Knowledge Bases },
+  author={ Christian Di Maio and Cristian Cosci and Marco Maggini and Valentina Poggioni and Stefano Melacci },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2412.18295v2 },
+  url={ http://arxiv.org/abs/2412.18295v2 },
+  eprint={ 2412.18295v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.AI },
+  pdf={ http://arxiv.org/pdf/2412.18295v2 },
+  abstract={ The growing ubiquity of Retrieval-Augmented Generation (RAG) systems in several real-world services triggers severe concerns about their security. A RAG system improves the generative capabilities of a Large Language Models (LLM) by a retrieval mechanism which operates on a private knowledge base, whose unintended exposure could lead to severe consequences, including breaches of private and sensitive information. This paper presents a black-box attack to force a RAG system to leak its private knowledge base which, differently from existing approaches, is adaptive and automatic. A relevance-based mechanism and an attacker-side open-source LLM favor the generation of effective queries to leak most of the (hidden) knowledge base. Extensive experimentation proves the quality of the proposed algorithm in different RAG pipelines and domains, comparing to very recent related approaches, which turn out to be either not fully black-box, not adaptive, or not based on open-source models. The findings from our study remark the urgent need for more robust privacy safeguards in the design and deployment of RAG systems. }
+}
+
+
+@article{2501.05249v1,
+  title={ RAG-WM: An Efficient Black-Box Watermarking Approach for Retrieval-Augmented Generation of Large Language Models },
+  author={ Peizhuo Lv and Mengjie Sun and Hao Wang and Xiaofeng Wang and Shengzhi Zhang and Yuxuan Chen and Kai Chen and Limin Sun },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2501.05249v1 },
+  url={ http://arxiv.org/abs/2501.05249v1 },
+  eprint={ 2501.05249v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2501.05249v1 },
+  abstract={ In recent years, tremendous success has been witnessed in Retrieval-Augmented Generation (RAG), widely used to enhance Large Language Models (LLMs) in domain-specific, knowledge-intensive, and privacy-sensitive tasks. However, attackers may steal those valuable RAGs and deploy or commercialize them, making it essential to detect Intellectual Property (IP) infringement. Most existing ownership protection solutions, such as watermarks, are designed for relational databases and texts. They cannot be directly applied to RAGs because relational database watermarks require white-box access to detect IP infringement, which is unrealistic for the knowledge base in RAGs. Meanwhile, post-processing by the adversary's deployed LLMs typically destructs text watermark information. To address those problems, we propose a novel black-box "knowledge watermark" approach, named RAG-WM, to detect IP infringement of RAGs. RAG-WM uses a multi-LLM interaction framework, comprising a Watermark Generator, Shadow LLM & RAG, and Watermark Discriminator, to create watermark texts based on watermark entity-relationship tuples and inject them into the target RAG. We evaluate RAG-WM across three domain-specific and two privacy-sensitive tasks on four benchmark LLMs. Experimental results show that RAG-WM effectively detects the stolen RAGs in various deployed LLMs. Furthermore, RAG-WM is robust against paraphrasing, unrelated content removal, knowledge insertion, and knowledge expansion attacks. Lastly, RAG-WM can also evade watermark detection approaches, highlighting its promising application in detecting IP infringement of RAG systems. }
+}
+
+
+@article{2501.13944v1,
+  title={ Fanar: An Arabic-Centric Multimodal Generative AI Platform },
+  author={ Fanar Team and Ummar Abbas and Mohammad Shahmeer Ahmad and Firoj Alam and Enes Altinisik and Ehsannedin Asgari and Yazan Boshmaf and Sabri Boughorbel and Sanjay Chawla and Shammur Chowdhury and Fahim Dalvi and Kareem Darwish and Nadir Durrani and Mohamed Elfeky and Ahmed Elmagarmid and Mohamed Eltabakh and Masoomali Fatehkia and Anastasios Fragkopoulos and Maram Hasanain and Majd Hawasly and Mus'ab Husaini and Soon-Gyo Jung and Ji Kim Lucas and Walid Magdy and Safa Messaoud and Abubakr Mohamed and Tasnim Mohiuddin and Basel Mousi and Hamdy Mubarak and Ahmad Musleh and Zan Naeem and Mourad Ouzzani and Dorde Popovic and Amin Sadeghi and Husrev Taha Sencar and Mohammed Shinoy and Omar Sinan and Yifan Zhang and Ahmed Ali and Yassine El Kheir and Xiaosong Ma and Chaoyi Ruan },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2501.13944v1 },
+  url={ http://arxiv.org/abs/2501.13944v1 },
+  eprint={ 2501.13944v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2501.13944v1 },
+  abstract={ We present Fanar, a platform for Arabic-centric multimodal generative AI systems, that supports language, speech and image generation tasks. At the heart of Fanar are Fanar Star and Fanar Prime, two highly capable Arabic Large Language Models (LLMs) that are best in the class on well established benchmarks for similar sized models. Fanar Star is a 7B (billion) parameter model that was trained from scratch on nearly 1 trillion clean and deduplicated Arabic, English and Code tokens. Fanar Prime is a 9B parameter model continually trained on the Gemma-2 9B base model on the same 1 trillion token set. Both models are concurrently deployed and designed to address different types of prompts transparently routed through a custom-built orchestrator. The Fanar platform provides many other capabilities including a customized Islamic Retrieval Augmented Generation (RAG) system for handling religious prompts, a Recency RAG for summarizing information about current or recent events that have occurred after the pre-training data cut-off date. The platform provides additional cognitive capabilities including in-house bilingual speech recognition that supports multiple Arabic dialects, voice and image generation that is fine-tuned to better reflect regional characteristics. Finally, Fanar provides an attribution service that can be used to verify the authenticity of fact based generated content.   The design, development, and implementation of Fanar was entirely undertaken at Hamad Bin Khalifa University's Qatar Computing Research Institute (QCRI) and was sponsored by Qatar's Ministry of Communications and Information Technology to enable sovereign AI technology development. }
+}
+
+
+@article{2502.03916v1,
+  title={ Experiments with Large Language Models on Retrieval-Augmented Generation for Closed-Source Simulation Software },
+  author={ Andreas Baumann and Peter Eberhard },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2502.03916v1 },
+  url={ http://arxiv.org/abs/2502.03916v1 },
+  eprint={ 2502.03916v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2502.03916v1 },
+  abstract={ Large Language Models (LLMs) are increasingly helpful in text generation, even writing code in programming languages based on user prompts written in natural language. They are even applied to generate simulation models for multibody systems from natural language. Research results suggest that LLMs surpass the mere replication of existing code examples, where some LLMs have been trained on an open-source multibody simulation code. However, for closed-source simulation software, such results are not to be expected as their ideas and concepts might differ from other publicly available ones. LLMs can hallucinate for knowledge-intensive tasks, such as model creation, which can lead to wrong responses. This is especially the case for the LLM unknown closed-source simulation software. The same applies to other internal knowledge kept private to protect intellectual property or data privacy. The Retrieval-Augmented Generation (RAG) approach might yield a solution for these knowledge-intensive tasks. This paper explores the application of RAG to closed-source simulation software and presents first experiments. After a brief introduction to LLMs, the RAG approach, and the simulation method applied by the close-source simulation software, several examples are provided to test LLMs' knowledge of the simulation software and the creation of simulation models using two RAG systems. The examples show promising results indicating the benefits of applying RAG systems to closed-source simulation software, helping to access their knowledge. Nevertheless, they also reveal gaps in the applied information and open questions for further research. }
+}
+
+
+@article{2502.06652v1,
+  title={ Transparent NLP: Using RAG and LLM Alignment for Privacy Q&A },
+  author={ Anna Leschanowsky and Zahra Kolagar and Erion Çano and Ivan Habernal and Dara Hallinan and Emanuël A. P. Habets and Birgit Popp },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2502.06652v1 },
+  url={ http://arxiv.org/abs/2502.06652v1 },
+  eprint={ 2502.06652v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2502.06652v1 },
+  abstract={ The transparency principle of the General Data Protection Regulation (GDPR) requires data processing information to be clear, precise, and accessible. While language models show promise in this context, their probabilistic nature complicates truthfulness and comprehensibility.   This paper examines state-of-the-art Retrieval Augmented Generation (RAG) systems enhanced with alignment techniques to fulfill GDPR obligations. We evaluate RAG systems incorporating an alignment module like Rewindable Auto-regressive Inference (RAIN) and our proposed multidimensional extension, MultiRAIN, using a Privacy Q&A dataset. Responses are optimized for preciseness and comprehensibility and are assessed through 21 metrics, including deterministic and large language model-based evaluations.   Our results show that RAG systems with an alignment module outperform baseline RAG systems on most metrics, though none fully match human answers. Principal component analysis of the results reveals complex interactions between metrics, highlighting the need to refine metrics. This study provides a foundation for integrating advanced natural language processing systems into legal compliance frameworks. }
+}
+
+
+@article{2502.06872v1,
+  title={ Towards Trustworthy Retrieval Augmented Generation for Large Language Models: A Survey },
+  author={ Bo Ni and Zheyuan Liu and Leyao Wang and Yongjia Lei and Yuying Zhao and Xueqi Cheng and Qingkai Zeng and Luna Dong and Yinglong Xia and Krishnaram Kenthapadi and Ryan Rossi and Franck Dernoncourt and Md Mehrab Tanjim and Nesreen Ahmed and Xiaorui Liu and Wenqi Fan and Erik Blasch and Yu Wang and Meng Jiang and Tyler Derr },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2502.06872v1 },
+  url={ http://arxiv.org/abs/2502.06872v1 },
+  eprint={ 2502.06872v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2502.06872v1 },
+  abstract={ Retrieval-Augmented Generation (RAG) is an advanced technique designed to address the challenges of Artificial Intelligence-Generated Content (AIGC). By integrating context retrieval into content generation, RAG provides reliable and up-to-date external knowledge, reduces hallucinations, and ensures relevant context across a wide range of tasks. However, despite RAG's success and potential, recent studies have shown that the RAG paradigm also introduces new risks, including robustness issues, privacy concerns, adversarial attacks, and accountability issues. Addressing these risks is critical for future applications of RAG systems, as they directly impact their trustworthiness. Although various methods have been developed to improve the trustworthiness of RAG methods, there is a lack of a unified perspective and framework for research in this topic. Thus, in this paper, we aim to address this gap by providing a comprehensive roadmap for developing trustworthy RAG systems. We place our discussion around five key perspectives: reliability, privacy, safety, fairness, explainability, and accountability. For each perspective, we present a general framework and taxonomy, offering a structured approach to understanding the current challenges, evaluating existing solutions, and identifying promising future research directions. To encourage broader adoption and innovation, we also highlight the downstream applications where trustworthy RAG systems have a significant impact. }
+}
+
+
+@article{2502.17390v1,
+  title={ Mitigating Bias in RAG: Controlling the Embedder },
+  author={ Taeyoun Kim and Jacob Springer and Aditi Raghunathan and Maarten Sap },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2502.17390v1 },
+  url={ http://arxiv.org/abs/2502.17390v1 },
+  eprint={ 2502.17390v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2502.17390v1 },
+  abstract={ In retrieval augmented generation (RAG) systems, each individual component -- the LLM, embedder, and corpus -- could introduce biases in the form of skews towards outputting certain perspectives or identities. In this work, we study the conflict between biases of each component and their relationship to the overall bias of the RAG system, which we call bias conflict. Examining both gender and political biases as case studies, we show that bias conflict can be characterized through a linear relationship among components despite its complexity in 6 different LLMs. Through comprehensive fine-tuning experiments creating 120 differently biased embedders, we demonstrate how to control bias while maintaining utility and reveal the importance of reverse-biasing the embedder to mitigate bias in the overall system. Additionally, we find that LLMs and tasks exhibit varying sensitivities to the embedder bias, a crucial factor to consider for debiasing. Our results underscore that a fair RAG system can be better achieved by carefully controlling the bias of the embedder rather than increasing its fairness. }
+}
+
+
+@article{2503.10674v1,
+  title={ Enhancing Retrieval for ESGLLM via ESG-CID -- A Disclosure Content Index Finetuning Dataset for Mapping GRI and ESRS },
+  author={ Shafiuddin Rehan Ahmed and Ankit Parag Shah and Quan Hung Tran and Vivek Khetan and Sukryool Kang and Ankit Mehta and Yujia Bao and Wei Wei },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2503.10674v1 },
+  url={ http://arxiv.org/abs/2503.10674v1 },
+  eprint={ 2503.10674v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2503.10674v1 },
+  abstract={ Climate change has intensified the need for transparency and accountability in organizational practices, making Environmental, Social, and Governance (ESG) reporting increasingly crucial. Frameworks like the Global Reporting Initiative (GRI) and the new European Sustainability Reporting Standards (ESRS) aim to standardize ESG reporting, yet generating comprehensive reports remains challenging due to the considerable length of ESG documents and variability in company reporting styles. To facilitate ESG report automation, Retrieval-Augmented Generation (RAG) systems can be employed, but their development is hindered by a lack of labeled data suitable for training retrieval models. In this paper, we leverage an underutilized source of weak supervision -- the disclosure content index found in past ESG reports -- to create a comprehensive dataset, ESG-CID, for both GRI and ESRS standards. By extracting mappings between specific disclosure requirements and corresponding report sections, and refining them using a Large Language Model as a judge, we generate a robust training and evaluation set. We benchmark popular embedding models on this dataset and show that fine-tuning BERT-based models can outperform commercial embeddings and leading public models, even under temporal data splits for cross-report style transfer from GRI to ESRS }
+}
+
+
+@article{2503.15548v1,
+  title={ Privacy-Aware RAG: Secure and Isolated Knowledge Retrieval },
+  author={ Pengcheng Zhou and Yinglun Feng and Zhongliang Yang },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2503.15548v1 },
+  url={ http://arxiv.org/abs/2503.15548v1 },
+  eprint={ 2503.15548v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2503.15548v1 },
+  abstract={ The widespread adoption of Retrieval-Augmented Generation (RAG) systems in real-world applications has heightened concerns about the confidentiality and integrity of their proprietary knowledge bases. These knowledge bases, which play a critical role in enhancing the generative capabilities of Large Language Models (LLMs), are increasingly vulnerable to breaches that could compromise sensitive information. To address these challenges, this paper proposes an advanced encryption methodology designed to protect RAG systems from unauthorized access and data leakage. Our approach encrypts both textual content and its corresponding embeddings prior to storage, ensuring that all data remains securely encrypted. This mechanism restricts access to authorized entities with the appropriate decryption keys, thereby significantly reducing the risk of unintended data exposure. Furthermore, we demonstrate that our encryption strategy preserves the performance and functionality of RAG pipelines, ensuring compatibility across diverse domains and applications. To validate the robustness of our method, we provide comprehensive security proofs that highlight its resilience against potential threats and vulnerabilities. These proofs also reveal limitations in existing approaches, which often lack robustness, adaptability, or reliance on open-source models. Our findings suggest that integrating advanced encryption techniques into the design and deployment of RAG systems can effectively enhance privacy safeguards. This research contributes to the ongoing discourse on improving security measures for AI-driven services and advocates for stricter data protection standards within RAG architectures. }
+}
+
+
+@article{2504.12323v2,
+  title={ The Other Side of the Coin: Exploring Fairness in Retrieval-Augmented Generation },
+  author={ Zheng Zhang and Ning Li and Qi Liu and Rui Li and Weibo Gao and Qingyang Mao and Zhenya Huang and Baosheng Yu and Dacheng Tao },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.12323v2 },
+  url={ http://arxiv.org/abs/2504.12323v2 },
+  eprint={ 2504.12323v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2504.12323v2 },
+  abstract={ Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by retrieving relevant document from external knowledge sources. By referencing this external knowledge, RAG effectively reduces the generation of factually incorrect content and addresses hallucination issues within LLMs. Recently, there has been growing attention to improving the performance and efficiency of RAG systems from various perspectives. While these advancements have yielded significant results, the application of RAG in domains with considerable societal implications raises a critical question about fairness: What impact does the introduction of the RAG paradigm have on the fairness of LLMs? To address this question, we conduct extensive experiments by varying the LLMs, retrievers, and retrieval sources. Our experimental analysis reveals that the scale of the LLMs plays a significant role in influencing fairness outcomes within the RAG framework. When the model scale is smaller than 8B, the integration of retrieval mechanisms often exacerbates unfairness in small-scale LLMs (e.g., LLaMA3.2-1B, Mistral-7B, and LLaMA3-8B). To mitigate the fairness issues introduced by RAG for small-scale LLMs, we propose two approaches, FairFT and FairFilter. Specifically, in FairFT, we align the retriever with the LLM in terms of fairness, enabling it to retrieve documents that facilitate fairer model outputs. In FairFilter, we propose a fairness filtering mechanism to filter out biased content after retrieval. Finally, we validate our proposed approaches on real-world datasets, demonstrating their effectiveness in improving fairness while maintaining performance. }
+}
+
+
+@article{2504.15629v1,
+  title={ CiteFix: Enhancing RAG Accuracy Through Post-Processing Citation Correction },
+  author={ Harsh Maheshwari and Srikanth Tenneti and Alwarappan Nakkiran },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.15629v1 },
+  url={ http://arxiv.org/abs/2504.15629v1 },
+  eprint={ 2504.15629v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.IR },
+  pdf={ http://arxiv.org/pdf/2504.15629v1 },
+  abstract={ Retrieval Augmented Generation (RAG) has emerged as a powerful application of Large Language Models (LLMs), revolutionizing information search and consumption. RAG systems combine traditional search capabilities with LLMs to generate comprehensive answers to user queries, ideally with accurate citations. However, in our experience of developing a RAG product, LLMs often struggle with source attribution, aligning with other industry studies reporting citation accuracy rates of only about 74% for popular generative search engines. To address this, we present efficient post-processing algorithms to improve citation accuracy in LLM-generated responses, with minimal impact on latency and cost. Our approaches cross-check generated citations against retrieved articles using methods including keyword + semantic matching, fine tuned model with BERTScore, and a lightweight LLM-based technique. Our experimental results demonstrate a relative improvement of 15.46% in the overall accuracy metrics of our RAG system. This significant enhancement potentially enables a shift from our current larger language model to a relatively smaller model that is approximately 12x more cost-effective and 3x faster in inference time, while maintaining comparable performance. This research contributes to enhancing the reliability and trustworthiness of AI-generated content in information retrieval and summarization tasks which is critical to gain customer trust especially in commercial products. }
+}
+
+
+@article{2504.16883v1,
+  title={ Enhancing Critical Thinking with AI: A Tailored Warning System for RAG Models },
+  author={ Xuyang Zhu and Sejoon Chang and Andrew Kuik },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.16883v1 },
+  url={ http://arxiv.org/abs/2504.16883v1 },
+  eprint={ 2504.16883v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.HC },
+  pdf={ http://arxiv.org/pdf/2504.16883v1 },
+  abstract={ Retrieval-Augmented Generation (RAG) systems offer a powerful approach to enhancing large language model (LLM) outputs by incorporating fact-checked, contextually relevant information. However, fairness and reliability concerns persist, as hallucinations can emerge at both the retrieval and generation stages, affecting users' reasoning and decision-making. Our research explores how tailored warning messages -- whose content depends on the specific context of hallucination -- shape user reasoning and actions in an educational quiz setting. Preliminary findings suggest that while warnings improve accuracy and awareness of high-level hallucinations, they may also introduce cognitive friction, leading to confusion and diminished trust in the system. By examining these interactions, this work contributes to the broader goal of AI-augmented reasoning: developing systems that actively support human reflection, critical thinking, and informed decision-making rather than passive information consumption. }
+}
+
+
+@article{2504.18024v1,
+  title={ SMARTFinRAG: Interactive Modularized Financial RAG Benchmark },
+  author={ Yiwei Zha },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.18024v1 },
+  url={ http://arxiv.org/abs/2504.18024v1 },
+  eprint={ 2504.18024v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CE },
+  pdf={ http://arxiv.org/pdf/2504.18024v1 },
+  abstract={ Financial sectors are rapidly adopting language model technologies, yet evaluating specialized RAG systems in this domain remains challenging. This paper introduces SMARTFinRAG, addressing three critical gaps in financial RAG assessment: (1) a fully modular architecture where components can be dynamically interchanged during runtime; (2) a document-centric evaluation paradigm generating domain-specific QA pairs from newly ingested financial documents; and (3) an intuitive interface bridging research-implementation divides. Our evaluation quantifies both retrieval efficacy and response quality, revealing significant performance variations across configurations. The platform's open-source architecture supports transparent, reproducible research while addressing practical deployment challenges faced by financial institutions implementing RAG systems. }
+}
+
+
+@article{2504.19101v1,
+  title={ Privacy-Preserving Federated Embedding Learning for Localized Retrieval-Augmented Generation },
+  author={ Qianren Mao and Qili Zhang and Hanwen Hao and Zhentao Han and Runhua Xu and Weifeng Jiang and Qi Hu and Zhijun Chen and Tyler Zhou and Bo Li and Yangqiu Song and Jin Dong and Jianxin Li and Philip S. Yu },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.19101v1 },
+  url={ http://arxiv.org/abs/2504.19101v1 },
+  eprint={ 2504.19101v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CL },
+  pdf={ http://arxiv.org/pdf/2504.19101v1 },
+  abstract={ Retrieval-Augmented Generation (RAG) has recently emerged as a promising solution for enhancing the accuracy and credibility of Large Language Models (LLMs), particularly in Question & Answer tasks. This is achieved by incorporating proprietary and private data from integrated databases. However, private RAG systems face significant challenges due to the scarcity of private domain data and critical data privacy issues. These obstacles impede the deployment of private RAG systems, as developing privacy-preserving RAG systems requires a delicate balance between data security and data availability. To address these challenges, we regard federated learning (FL) as a highly promising technology for privacy-preserving RAG services. We propose a novel framework called Federated Retrieval-Augmented Generation (FedE4RAG). This framework facilitates collaborative training of client-side RAG retrieval models. The parameters of these models are aggregated and distributed on a central-server, ensuring data privacy without direct sharing of raw data. In FedE4RAG, knowledge distillation is employed for communication between the server and client models. This technique improves the generalization of local RAG retrievers during the federated learning process. Additionally, we apply homomorphic encryption within federated learning to safeguard model parameters and mitigate concerns related to data leakage. Extensive experiments conducted on the real-world dataset have validated the effectiveness of FedE4RAG. The results demonstrate that our proposed framework can markedly enhance the performance of private RAG systems while maintaining robust data privacy protection. }
+}
+
+
+@article{2504.20898v2,
+  title={ CBM-RAG: Demonstrating Enhanced Interpretability in Radiology Report Generation with Multi-Agent RAG and Concept Bottleneck Models },
+  author={ Hasan Md Tusfiqur Alam and Devansh Srivastav and Abdulrahman Mohamed Selim and Md Abdul Kadir and Md Moktadirul Hoque Shuvo and Daniel Sonntag },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2504.20898v2 },
+  url={ http://arxiv.org/abs/2504.20898v2 },
+  eprint={ 2504.20898v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.AI },
+  pdf={ http://arxiv.org/pdf/2504.20898v2 },
+  doi={ 10.1145/3731406.3731970 },
+  abstract={ Advancements in generative Artificial Intelligence (AI) hold great promise for automating radiology workflows, yet challenges in interpretability and reliability hinder clinical adoption. This paper presents an automated radiology report generation framework that combines Concept Bottleneck Models (CBMs) with a Multi-Agent Retrieval-Augmented Generation (RAG) system to bridge AI performance with clinical explainability. CBMs map chest X-ray features to human-understandable clinical concepts, enabling transparent disease classification. Meanwhile, the RAG system integrates multi-agent collaboration and external knowledge to produce contextually rich, evidence-based reports. Our demonstration showcases the system's ability to deliver interpretable predictions, mitigate hallucinations, and generate high-quality, tailored reports with an interactive interface addressing accuracy, trust, and usability challenges. This framework provides a pathway to improving diagnostic consistency and empowering radiologists with actionable insights. }
+}
+
+
+@article{2505.08445v1,
+  title={ Optimizing Retrieval-Augmented Generation: Analysis of Hyperparameter Impact on Performance and Efficiency },
+  author={ Adel Ammar and Anis Koubaa and Omer Nacar and Wadii Boulila },
+  year={ 2025 },
+  journal={ arXiv preprint arXiv:2505.08445v1 },
+  url={ http://arxiv.org/abs/2505.08445v1 },
+  eprint={ 2505.08445v1 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.LG },
+  pdf={ http://arxiv.org/pdf/2505.08445v1 },
+  abstract={ Large language models achieve high task performance yet often hallucinate or rely on outdated knowledge. Retrieval-augmented generation (RAG) addresses these gaps by coupling generation with external search. We analyse how hyperparameters influence speed and quality in RAG systems, covering Chroma and Faiss vector stores, chunking policies, cross-encoder re-ranking, and temperature, and we evaluate six metrics: faithfulness, answer correctness, answer relevancy, context precision, context recall, and answer similarity. Chroma processes queries 13% faster, whereas Faiss yields higher retrieval precision, revealing a clear speed-accuracy trade-off. Naive fixed-length chunking with small windows and minimal overlap outperforms semantic segmentation while remaining the quickest option. Re-ranking provides modest gains in retrieval quality yet increases runtime by roughly a factor of 5, so its usefulness depends on latency constraints. These results help practitioners balance computational cost and accuracy when tuning RAG systems for transparent, up-to-date responses. Finally, we re-evaluate the top configurations with a corrective RAG workflow and show that their advantages persist when the model can iteratively request additional evidence. We obtain a near-perfect context precision (99%), which demonstrates that RAG systems can achieve extremely high retrieval accuracy with the right combination of hyperparameters, with significant implications for applications where retrieval quality directly impacts downstream task performance, such as clinical decision support in healthcare. }
+}
+
+

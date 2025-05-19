@@ -1,0 +1,12 @@
+@article{2411.01705v2,
+  title={ Data Extraction Attacks in Retrieval-Augmented Generation via Backdoors },
+  author={ Yuefeng Peng and Junda Wang and Hong Yu and Amir Houmansadr },
+  year={ 2024 },
+  journal={ arXiv preprint arXiv:2411.01705v2 },
+  url={ http://arxiv.org/abs/2411.01705v2 },
+  eprint={ 2411.01705v2 },
+  archivePrefix={arXiv},
+  primaryClass={ cs.CR },
+  pdf={ http://arxiv.org/pdf/2411.01705v2 },
+  abstract={ Despite significant advancements, large language models (LLMs) still struggle with providing accurate answers when lacking domain-specific or up-to-date knowledge. Retrieval-Augmented Generation (RAG) addresses this limitation by incorporating external knowledge bases, but it also introduces new attack surfaces. In this paper, we investigate data extraction attacks targeting RAG's knowledge databases. We show that previous prompt injection-based extraction attacks largely rely on the instruction-following capabilities of LLMs. As a result, they fail on models that are less responsive to such malicious prompts -- for example, our experiments show that state-of-the-art attacks achieve near-zero success on Gemma-2B-IT. Moreover, even for models that can follow these instructions, we found fine-tuning may significantly reduce attack performance. To further reveal the vulnerability, we propose to backdoor RAG, where a small portion of poisoned data is injected during the fine-tuning phase to create a backdoor within the LLM. When this compromised LLM is integrated into a RAG system, attackers can exploit specific triggers in prompts to manipulate the LLM to leak documents from the retrieval database. By carefully designing the poisoned data, we achieve both verbatim and paraphrased document extraction. For example, on Gemma-2B-IT, we show that with only 5\% poisoned data, our method achieves an average success rate of 94.1\% for verbatim extraction (ROUGE-L score: 82.1) and 63.6\% for paraphrased extraction (average ROUGE score: 66.4) across four datasets. These results underscore the privacy risks associated with the supply chain when deploying RAG systems. }
+}
